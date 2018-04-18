@@ -134,7 +134,6 @@ static void TestFuncs(comm_head_t *msg_head)
 	default:
 		break;
 	}
-
 }
 
 static void TestServiceFile(comm_head_t *msg_head)
@@ -866,7 +865,6 @@ void test_task(void *taskparam)
 	init_INA226_normal();
 	InitADC();
 
-
 	/* Main loop */
 	while (1) {
 		//TraceStr(" test task!\r\n");
@@ -898,8 +896,6 @@ void test_task(void *taskparam)
 	}
 }
 
-
-
 /* Comm func */
 static void UartCommFuncs(comm_head_t *msg_head)
 {
@@ -909,9 +905,7 @@ static void UartCommFuncs(comm_head_t *msg_head)
 		//UartTestServiceFile(msg_head);
 		break;
 	case SERVICE_TYPE_CMD:
-
 		temp_p = (char *)msg_head;
-
 		for (i = 0; i < 40; i++) {
 			PPP[2 * i + 1] = hex_table[temp_p[i] & 0x0f];
 			PPP[2 * i] = hex_table[(temp_p[i] >> 4) & 0x0f];
@@ -962,9 +956,6 @@ static void TestWarnReply(bool status)
 }
 #endif
 
-
-
-
 static void CheckFrameHeaderFromUartFIFO(FIFO_t *stFIFO, u8 *framebuf)
 {
 	u8 i;
@@ -976,8 +967,6 @@ static void CheckFrameHeaderFromUartFIFO(FIFO_t *stFIFO, u8 *framebuf)
 	/*Restore head */
 	stFIFO->head = tmp;
 }
-
-
 
 static bool RcvFrameFromUart(FIFO_t *stFIFO, u8 *framebuf)
 {
@@ -1026,7 +1015,6 @@ static bool RcvFrameFromUart(FIFO_t *stFIFO, u8 *framebuf)
 
 u16 RcvFirmFrameFromUart(FIFO_t *stFIFO, u8 *framebuf)
 {
-
 	u16 i, len;
 	//TraceStr("RcvFirmFrameFromUart\r\n");
 	len = FIFOLen(stFIFO);
@@ -1087,10 +1075,8 @@ u16 RcvWIFI_FirmFrameFromUart(FIFO_t *stFIFO, u8 *framebuf, u8 length)
 
 //}
 
-
 static bool uart_DMA_finished(void)
 {
-
 	if ((DMA_GetFlagStatus(DMA1_FLAG_TC7) == SET)
 	    || (DMA_GetCurrDataCounter(COMM_UART_TX_DMA) == 0)) {
 		DMA_ClearFlag(DMA1_FLAG_TC7);
@@ -1156,8 +1142,6 @@ static void TestSendData(u8 *buf, u16 len)
 	uart_start_TX_DMA((u32)&comm_uart_tx_buffer, len);
 
 }
-
-
 
 void MsgSendFromTest1(comm_head_t *test_msg_head, task_id_enum totask)
 {

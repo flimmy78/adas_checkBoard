@@ -30,8 +30,6 @@
 #include "inc_all.h"
 
 
-
-
 /******************************************************************************
 * @file
 * @author  		Gary
@@ -41,21 +39,11 @@
 *
 ******************************************************************************/
 
-
 /*   task  priority,  numeric higher priority higher*/
 
 #define			USB_TASK_PRIO			(configMAX_PRIORITIES - 1)
 #define			TEST_TASK_PRIO			(configMAX_PRIORITIES - 2)
 #define			CAN_TASK_PRIO			(configMAX_PRIORITIES - 3)
-
-
-
-
-
-
-
-
-
 
 
 /****************************************************************************/
@@ -64,9 +52,6 @@
 extern uint8_t APP_Tx_Buffer   [APP_TX_DATA_SIZE]  ;
 
 /****************************************************************************/
-
-
-
 
 /****************************************************************************/
 /*External  Functions */
@@ -81,13 +66,10 @@ extern void InitTestVar(void);
 
 /****************************************************************************/
 
-
-
 /****************************************************************************/
 /*Global  Variables */
 
 __ALIGN_BEGIN USB_OTG_CORE_HANDLE    USB_OTG_dev __ALIGN_END ;
-
 
 
 can_para_t can_para_500k, can_para_100k;
@@ -114,11 +96,6 @@ can_para_t can_para_500k, can_para_100k;
 
 /****************************************************************************/
 
-
-
-
-
-
 static void InitVar(void)
 {
 	InitUsbVar();
@@ -138,33 +115,24 @@ static void InitVar(void)
 	can_para_100k.bs2 = 8 - 1;
 	can_para_100k.enable = 1;
 
-
 }
 
 extern void RCC_GetClocksFreq(RCC_ClocksTypeDef *RCC_Clocks);
-
-
 
 int main(void)
 {
 	//  u32 i = 0;
 	RCC_ClocksTypeDef RCC_Clocks;
-
 	RCC_GetClocksFreq(&RCC_Clocks);
-
 	InitVar();
-
 	Driver_Init();
-
 	//Full Speed
 	USBD_Init(&USB_OTG_dev,
 	          USB_OTG_FS_CORE_ID,
 	          &USR_desc,
 	          &USBD_CDC_cb,
 	          &USR_cb);
-
 	SystemCoreClockUpdate();
-
 
 	TraceStr("system startup... \r\n");
 
@@ -179,15 +147,7 @@ int main(void)
 	while (1) {
 		;	//Never run  here
 	}
-
-
-
-
-
-
 }
-
-
 
 void vApplicationMallocFailedHook(void)
 {
