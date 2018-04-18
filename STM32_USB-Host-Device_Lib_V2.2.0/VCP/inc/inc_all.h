@@ -30,7 +30,6 @@
 #include "can.h"
 #include "comm.h"
 #include "usb_comm.h"
-#include "uart_comm.h"
 #include "driver.h"
 #include "crc32.h"
 #include "fifo.h"

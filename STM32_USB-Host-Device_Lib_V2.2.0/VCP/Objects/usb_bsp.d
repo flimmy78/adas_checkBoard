@@ -4,7 +4,7 @@
 .\objects\usb_bsp.o: .\inc\usb_conf.h
 .\objects\usb_bsp.o: ..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h
 .\objects\usb_bsp.o: ..\Libraries\CMSIS\Include\core_cm3.h
-.\objects\usb_bsp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usb_bsp.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usb_bsp.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\usb_bsp.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
 .\objects\usb_bsp.o: ..\Libraries\CMSIS\Include\core_cmFunc.h

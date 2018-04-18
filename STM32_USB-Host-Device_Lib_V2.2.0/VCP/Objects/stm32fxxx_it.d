@@ -2,7 +2,7 @@
 .\objects\stm32fxxx_it.o: .\inc\inc_all.h
 .\objects\stm32fxxx_it.o: ..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h
 .\objects\stm32fxxx_it.o: ..\Libraries\CMSIS\Include\core_cm3.h
-.\objects\stm32fxxx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32fxxx_it.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\stm32fxxx_it.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\stm32fxxx_it.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
 .\objects\stm32fxxx_it.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
@@ -42,13 +42,13 @@
 .\objects\stm32fxxx_it.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h
 .\objects\stm32fxxx_it.o: .\inc\usbd_desc.h
 .\objects\stm32fxxx_it.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h
-.\objects\stm32fxxx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\stm32fxxx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\stm32fxxx_it.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\stm32fxxx_it.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\stm32fxxx_it.o: .\inc\common.h
 .\objects\stm32fxxx_it.o: .\inc\msg.h
 .\objects\stm32fxxx_it.o: .\inc\FreeRTOS_inc.h
 .\objects\stm32fxxx_it.o: .\src\FreeRTOS\Source\include\FreeRTOS.h
-.\objects\stm32fxxx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\stm32fxxx_it.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\stm32fxxx_it.o: .\inc\FreeRTOSConfig.h
 .\objects\stm32fxxx_it.o: .\src\FreeRTOS\Source\include\projdefs.h
 .\objects\stm32fxxx_it.o: .\src\FreeRTOS\Source\include\portable.h
@@ -63,7 +63,6 @@
 .\objects\stm32fxxx_it.o: .\inc\can.h
 .\objects\stm32fxxx_it.o: .\inc\comm.h
 .\objects\stm32fxxx_it.o: .\inc\usb_comm.h
-.\objects\stm32fxxx_it.o: .\inc\uart_comm.h
 .\objects\stm32fxxx_it.o: .\inc\driver.h
 .\objects\stm32fxxx_it.o: .\inc\crc32.h
 .\objects\stm32fxxx_it.o: .\inc\fifo.h

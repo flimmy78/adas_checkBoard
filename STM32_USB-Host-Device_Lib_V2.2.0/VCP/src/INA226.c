@@ -55,17 +55,13 @@
 
 
 
-
-
-
 static I2C_DEV_t I2C_INA226;
 
-u32  TotalCurrent;		// uA
-u32  Power;							// mW
-u32  BusVoltage;					// mV
 
+extern Measurement_Para_t MeasPara;
 
-
+extern u8 GetTestStage(void);
+extern u8 GetMainBoard_State();
 static void i2c_scl_low()
 {
 	GPIO_ResetBits(I2C2_SCL_PORT,I2C2_SCL_PIN);
@@ -199,7 +195,7 @@ void init_INA226_normal(void)
 	soft_i2c_write(&I2C_INA226,CAL_REG,buf,2);
 
 
-	tmp = NOT_RST_BIT | B14_B12 | AVG256 | VBUSCT_1100us | VSHCT_1100us | MODE_SHUNT_BUS_CONTINOUS;
+	tmp = NOT_RST_BIT | B14_B12 | AVG512 | VBUSCT_1100us | VSHCT_1100us | MODE_SHUNT_BUS_CONTINOUS;
 	buf[0] = (tmp>>8) & 0xFF;
 	buf[1] = tmp & 0xFF;
 	soft_i2c_write(&I2C_INA226,CONFIG_REG,buf,2);
@@ -251,17 +247,19 @@ void init_INA226_sleep(void)
 
 
 
-extern u8 strbuf[64];
-
+extern char strbuf[64];
+extern u16 Current0;
+extern u16 Current1;
 void ReadINA226(void)
 {
 	u16 shunt,bus,cal;
 //	u16 current;
 	u8 buf[2];
-	
+	u32 tmp;
 
 	soft_i2c_read(&I2C_INA226,SHUNT_V_REG,buf,2);
 	shunt = buf[0]*256 + buf[1];
+	//Trace("shunt",shunt);
 
 	soft_i2c_read(&I2C_INA226,BUS_V_REG,buf,2);
 	bus = buf[0]*256 + buf[1];
@@ -271,12 +269,49 @@ void ReadINA226(void)
 
 	soft_i2c_read(&I2C_INA226,CAL_REG,buf,2);
 	cal = buf[0]*256 + buf[1];
-	
-	BusVoltage = (bus * 10) / 8;										// mV
-	TotalCurrent = (shunt * cal) / 2048;  					// 0.1mA
-	Power = (TotalCurrent * BusVoltage) / 10000;		// mW
 
-	sprintf(strbuf,"%4dv, current: %4d,power=%4d\r\n",BusVoltage,TotalCurrent,Power);
+	//Trace("cal",cal);
+	
+	MeasPara.BusVoltage = (bus * 10) / 8;						// mV
+//	MeasPara.WorkCurrent = (shunt * cal) / 2048;  				// 0.1mA
+	tmp = (shunt * cal) / 2048;  				// 0.1mA
+
+
+	MeasPara.WorkCurrent = 0;
+	MeasPara.SleepCurrent = 0;
+
+
+	if (GetTestStage() == TEST_WORK)
+	{
+		MeasPara.WorkCurrent = tmp;
+	 	MeasPara.SleepCurrent = 0;
+	}
+	if (GetTestStage() == TEST_SLEEP)
+	{
+		MeasPara.WorkCurrent = 0;
+	 	MeasPara.SleepCurrent = tmp;
+	}	
+	
+
+	
+	if(GetMainBoard_State() == MAINBOARD_WORK)
+	{
+		MeasPara.WorkCurrent = tmp;
+	 	MeasPara.SleepCurrent = 0;
+		
+		Current0 = MeasPara.WorkCurrent;
+	}
+
+	if(GetMainBoard_State() == MAINBOARD_OFF)
+	{
+		MeasPara.WorkCurrent = 0;
+	 	MeasPara.SleepCurrent = tmp;
+		Current1 = MeasPara.SleepCurrent;
+	}
+
+	MeasPara.Power = (MeasPara.WorkCurrent * MeasPara.BusVoltage) / 10000;				// mW
+
+	//sprintf(strbuf,"%4dv, current: %4d,power=%4d\r\n",MeasPara.BusVoltage,MeasPara.WorkCurrent,MeasPara.Power);
 
 	TraceStr(strbuf);
 

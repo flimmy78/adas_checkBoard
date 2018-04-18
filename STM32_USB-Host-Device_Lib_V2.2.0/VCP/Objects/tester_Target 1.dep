@@ -1,13 +1,13 @@
 Dependencies for Project 'tester', Target 'Target 1': (DO NOT MODIFY !)
-F (..\Libraries\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c)(0x58C6484A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_cdc_core.o --omf_browse .\objects\usbd_cdc_core.crf --depend .\objects\usbd_cdc_core.d)
+F (..\Libraries\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c)(0x58C6484A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_cdc_core.o --omf_browse .\objects\usbd_cdc_core.crf --depend .\objects\usbd_cdc_core.d)
 I (..\Libraries\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x5640A2E2)
 I (.\inc\usbd_conf.h)(0x58C647F2)
 I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -19,7 +19,7 @@ I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (.\inc\inc_all.h)(0x58CF46AB)
+I (.\inc\inc_all.h)(0x58EAF634)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x4F66FC8C)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4F66FC8C)
@@ -33,13 +33,13 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4F66FC8C)
 I (.\inc\system_settings.h)(0x58B7E364)
 I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -50,23 +50,22 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd.c)(0x56445558)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_dcd.o --omf_browse .\objects\usb_dcd.crf --depend .\objects\usb_dcd.d)
+F (..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd.c)(0x56445558)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_dcd.o --omf_browse .\objects\usb_dcd.crf --depend .\objects\usb_dcd.d)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
 I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -74,14 +73,14 @@ I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_bsp.h)(0x5640A2E2)
-F (..\Libraries\STM32_USB_Device_Library\Core\src\usbd_req.c)(0x5640A2E2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_req.o --omf_browse .\objects\usbd_req.crf --depend .\objects\usbd_req.d)
+F (..\Libraries\STM32_USB_Device_Library\Core\src\usbd_req.c)(0x5640A2E2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_req.o --omf_browse .\objects\usbd_req.crf --depend .\objects\usbd_req.d)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x5640A2E2)
 I (.\inc\usbd_conf.h)(0x58C647F2)
 I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -93,12 +92,12 @@ I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5640A2E2)
 I (.\inc\usbd_desc.h)(0x58B63653)
-F (..\Libraries\STM32_USB_OTG_Driver\src\usb_core.c)(0x56445558)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_core.o --omf_browse .\objects\usb_core.crf --depend .\objects\usb_core.d)
+F (..\Libraries\STM32_USB_OTG_Driver\src\usb_core.c)(0x56445558)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_core.o --omf_browse .\objects\usb_core.crf --depend .\objects\usb_core.d)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
 I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -106,14 +105,14 @@ I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_bsp.h)(0x5640A2E2)
-F (..\Libraries\STM32_USB_Device_Library\Core\src\usbd_core.c)(0x5640A2E2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_core.o --omf_browse .\objects\usbd_core.crf --depend .\objects\usbd_core.d)
+F (..\Libraries\STM32_USB_Device_Library\Core\src\usbd_core.c)(0x5640A2E2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_core.o --omf_browse .\objects\usbd_core.crf --depend .\objects\usbd_core.d)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
 I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -126,14 +125,14 @@ I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd_int.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_bsp.h)(0x5640A2E2)
-F (..\Libraries\STM32_USB_Device_Library\Core\src\usbd_ioreq.c)(0x5640A2E2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_ioreq.o --omf_browse .\objects\usbd_ioreq.crf --depend .\objects\usbd_ioreq.d)
+F (..\Libraries\STM32_USB_Device_Library\Core\src\usbd_ioreq.c)(0x5640A2E2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_ioreq.o --omf_browse .\objects\usbd_ioreq.crf --depend .\objects\usbd_ioreq.d)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x5640A2E2)
 I (.\inc\usbd_conf.h)(0x58C647F2)
 I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -143,14 +142,14 @@ I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
-F (..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd_int.c)(0x5850F096)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_dcd_int.o --omf_browse .\objects\usb_dcd_int.crf --depend .\objects\usb_dcd_int.d)
+F (..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd_int.c)(0x5850F096)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_dcd_int.o --omf_browse .\objects\usb_dcd_int.crf --depend .\objects\usb_dcd_int.d)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd_int.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
 I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -158,13 +157,11 @@ I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (.\src\bin_locate.s)(0x58D882A8)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 520" --pd "STM32F10X_CL SETA 1"-o .\objects\bin_locate.o --depend .\objects\bin_locate.d)
-I (mcu_test_code.bin)(0x589A980B)
-F (.\src\stm32fxxx_it.c)(0x58D8B28F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32fxxx_it.o --omf_browse .\objects\stm32fxxx_it.crf --depend .\objects\stm32fxxx_it.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\stm32fxxx_it.c)(0x5AAF1726)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32fxxx_it.o --omf_browse .\objects\stm32fxxx_it.crf --depend .\objects\stm32fxxx_it.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -194,13 +191,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -211,32 +208,31 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\startup_stm32f10x_cl.s)(0x58D1E62B)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 520" --pd "STM32F10X_CL SETA 1"-o .\objects\startup_stm32f10x_cl.o --depend .\objects\startup_stm32f10x_cl.d)
-F (.\src\system_stm32f10x.c)(0x58B636EA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\startup_stm32f10x_cl.s)(0x59007471)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 520" --pd "STM32F10X_CL SETA 1"-o .\objects\startup_stm32f10x_cl.o --depend .\objects\startup_stm32f10x_cl.d)
+F (.\src\system_stm32f10x.c)(0x58B636EA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (.\src\usb_bsp.c)(0x5853B9CA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_bsp.o --omf_browse .\objects\usb_bsp.crf --depend .\objects\usb_bsp.d)
+F (.\src\usb_bsp.c)(0x5853B9CA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_bsp.o --omf_browse .\objects\usb_bsp.crf --depend .\objects\usb_bsp.d)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_bsp.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
 I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -245,108 +241,11 @@ I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
 I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4F66FC8C)
-F (.\src\usbd_cdc_vcp.c)(0x58CCDA5F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_cdc_vcp.o --omf_browse .\objects\usbd_cdc_vcp.crf --depend .\objects\usbd_cdc_vcp.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\usbd_cdc_vcp.c)(0x58CCDA5F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_cdc_vcp.o --omf_browse .\objects\usbd_cdc_vcp.crf --depend .\objects\usbd_cdc_vcp.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
-I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
-I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
-I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x4F66FC8C)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4F66FC8C)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4F66FC8C)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4F66FC8C)
-I (.\inc\stm32fxxx_it.h)(0x5850E7C6)
-I (..\Libraries\STM32_USB_Device_Library\Class\cdc\inc\usbd_cdc_core.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x5640A2E2)
-I (.\inc\usbd_conf.h)(0x58C647F2)
-I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4F66FC8C)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4F66FC8C)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4F66FC8C)
-I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4F66FC8C)
-I (.\inc\system_settings.h)(0x58B7E364)
-I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
-I (.\inc\usbd_desc.h)(0x58B63653)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
-I (.\inc\FreeRTOS_inc.h)(0x584BE233)
-I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
-I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
-I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
-I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
-I (.\src\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
-I (.\src\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
-I (.\src\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
-I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
-I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
-I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
-I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
-I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
-I (.\inc\crc32.h)(0x5854862A)
-I (.\inc\fifo.h)(0x58549082)
-I (.\inc\spi_flash.h)(0x58B668D0)
-I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\usbd_desc.c)(0x58647269)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_desc.o --omf_browse .\objects\usbd_desc.crf --depend .\objects\usbd_desc.d)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
-I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
-I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
-I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
-I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
-I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x5640A2E2)
-I (.\inc\usbd_conf.h)(0x58C647F2)
-I (.\inc\usbd_desc.h)(0x58B63653)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-F (.\src\usbd_usr.c)(0x5850F9A6)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_usr.o --omf_browse .\objects\usbd_usr.crf --depend .\objects\usbd_usr.d)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x5640A2E2)
-I (.\inc\usbd_conf.h)(0x58C647F2)
-I (.\inc\usb_conf.h)(0x5850F998)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
-I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
-I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
-I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
-I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
-I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
-F (.\src\driver.c)(0x58D8B2A7)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\driver.o --omf_browse .\objects\driver.crf --depend .\objects\driver.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
-I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -376,13 +275,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -393,21 +292,56 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\can.c)(0x58CBD6CD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\usbd_desc.c)(0x58647269)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_desc.o --omf_browse .\objects\usbd_desc.crf --depend .\objects\usbd_desc.d)
+I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
+I (.\inc\usb_conf.h)(0x5850F998)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
+I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
+I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x5640A2E2)
+I (.\inc\usbd_conf.h)(0x58C647F2)
+I (.\inc\usbd_desc.h)(0x58B63653)
+I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
+F (.\src\usbd_usr.c)(0x5850F9A6)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usbd_usr.o --omf_browse .\objects\usbd_usr.crf --depend .\objects\usbd_usr.d)
+I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
+I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x5640A2E2)
+I (.\inc\usbd_conf.h)(0x58C647F2)
+I (.\inc\usb_conf.h)(0x5850F998)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
+I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
+I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
+I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_dcd.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_core.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_regs.h)(0x5640A2E2)
+I (..\Libraries\STM32_USB_OTG_Driver\inc\usb_defines.h)(0x5640A2E2)
+F (.\src\driver.c)(0x5AC2FF90)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\driver.o --omf_browse .\objects\driver.crf --depend .\objects\driver.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
+I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -437,13 +371,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -454,22 +388,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\crc32.c)(0x584BE234)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\crc32.o --omf_browse .\objects\crc32.crf --depend .\objects\crc32.d)
-F (.\src\fifo8.c)(0x58C64B80)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\fifo8.o --omf_browse .\objects\fifo8.crf --depend .\objects\fifo8.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\can.c)(0x5AD5B19F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -499,13 +431,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -516,21 +448,21 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\main.c)(0x58D4DE4C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\crc32.c)(0x584BE234)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\crc32.o --omf_browse .\objects\crc32.crf --depend .\objects\crc32.d)
+F (.\src\fifo8.c)(0x5AA0FF2D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\fifo8.o --omf_browse .\objects\fifo8.crf --depend .\objects\fifo8.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -560,13 +492,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -577,21 +509,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\adc.c)(0x58D09DDA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\main.c)(0x5AD5B17E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -621,13 +552,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -638,21 +569,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\trace.c)(0x58CCE0B3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\trace.o --omf_browse .\objects\trace.crf --depend .\objects\trace.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\adc.c)(0x5ACF1E81)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -682,13 +612,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -699,21 +629,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\INA226.c)(0x58D0C464)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\ina226.o --omf_browse .\objects\ina226.crf --depend .\objects\ina226.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\trace.c)(0x5A140067)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\trace.o --omf_browse .\objects\trace.crf --depend .\objects\trace.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -743,13 +672,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -760,21 +689,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\soft_i2c.c)(0x58B676D4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\soft_i2c.o --omf_browse .\objects\soft_i2c.crf --depend .\objects\soft_i2c.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\INA226.c)(0x5A7D373F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\ina226.o --omf_browse .\objects\ina226.crf --depend .\objects\ina226.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -804,13 +732,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -821,21 +749,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\usb_comm.c)(0x58D1E731)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_comm.o --omf_browse .\objects\usb_comm.crf --depend .\objects\usb_comm.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\soft_i2c.c)(0x58B676D4)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\soft_i2c.o --omf_browse .\objects\soft_i2c.crf --depend .\objects\soft_i2c.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -865,13 +792,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -882,21 +809,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\uart_comm.c)(0x58D21BE1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\uart_comm.o --omf_browse .\objects\uart_comm.crf --depend .\objects\uart_comm.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\usb_comm.c)(0x5AB5DF21)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\usb_comm.o --omf_browse .\objects\usb_comm.crf --depend .\objects\usb_comm.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -926,13 +852,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -943,21 +869,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\test.c)(0x58D8B419)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\test.o --omf_browse .\objects\test.crf --depend .\objects\test.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\test.c)(0x5AC4869F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\test.o --omf_browse .\objects\test.crf --depend .\objects\test.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -987,13 +912,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -1004,21 +929,20 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (.\src\firm.c)(0x58D8B652)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\firm.o --omf_browse .\objects\firm.crf --depend .\objects\firm.d)
-I (.\inc\inc_all.h)(0x58CF46AB)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+F (.\src\firm.c)(0x5AC1F6A5)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\firm.o --omf_browse .\objects\firm.crf --depend .\objects\firm.d)
+I (.\inc\inc_all.h)(0x58EAF634)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
@@ -1048,13 +972,13 @@ I (.\inc\usbd_cdc_vcp.h)(0x58CCD5FB)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x5850EBE8)
 I (.\inc\usbd_desc.h)(0x58B63653)
 I (..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x5640A2E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
-I (.\inc\common.h)(0x58CF3D83)
-I (.\inc\msg.h)(0x58D0C929)
+I (d:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+I (.\inc\common.h)(0x5A13EE5D)
+I (.\inc\msg.h)(0x5AA8D2A9)
 I (.\inc\FreeRTOS_inc.h)(0x584BE233)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -1065,243 +989,242 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\semphr.h)(0x573F3A16)
-I (.\inc\hardware.h)(0x58D8B00A)
+I (.\inc\hardware.h)(0x5AA0A8FF)
 I (.\inc\can.h)(0x58C6462D)
-I (.\inc\comm.h)(0x58CF97BD)
-I (.\inc\usb_comm.h)(0x58CBCF43)
-I (.\inc\uart_comm.h)(0x58CBD86D)
-I (.\inc\driver.h)(0x58C652D6)
+I (.\inc\comm.h)(0x5AB5DF04)
+I (.\inc\usb_comm.h)(0x5A951AEE)
+I (.\inc\driver.h)(0x5A1B8A5F)
 I (.\inc\crc32.h)(0x5854862A)
 I (.\inc\fifo.h)(0x58549082)
 I (.\inc\spi_flash.h)(0x58B668D0)
 I (.\inc\soft_i2c.h)(0x58B7DBFE)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_adc.o --omf_browse .\objects\stm32f10x_adc.crf --depend .\objects\stm32f10x_adc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_adc.o --omf_browse .\objects\stm32f10x_adc.crf --depend .\objects\stm32f10x_adc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_bkp.o --omf_browse .\objects\stm32f10x_bkp.crf --depend .\objects\stm32f10x_bkp.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_bkp.o --omf_browse .\objects\stm32f10x_bkp.crf --depend .\objects\stm32f10x_bkp.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_can.o --omf_browse .\objects\stm32f10x_can.crf --depend .\objects\stm32f10x_can.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_can.o --omf_browse .\objects\stm32f10x_can.crf --depend .\objects\stm32f10x_can.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_cec.o --omf_browse .\objects\stm32f10x_cec.crf --depend .\objects\stm32f10x_cec.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_cec.o --omf_browse .\objects\stm32f10x_cec.crf --depend .\objects\stm32f10x_cec.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_crc.o --omf_browse .\objects\stm32f10x_crc.crf --depend .\objects\stm32f10x_crc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_crc.o --omf_browse .\objects\stm32f10x_crc.crf --depend .\objects\stm32f10x_crc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_dac.o --omf_browse .\objects\stm32f10x_dac.crf --depend .\objects\stm32f10x_dac.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_dac.o --omf_browse .\objects\stm32f10x_dac.crf --depend .\objects\stm32f10x_dac.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_dbgmcu.o --omf_browse .\objects\stm32f10x_dbgmcu.crf --depend .\objects\stm32f10x_dbgmcu.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_dbgmcu.o --omf_browse .\objects\stm32f10x_dbgmcu.crf --depend .\objects\stm32f10x_dbgmcu.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_dma.o --omf_browse .\objects\stm32f10x_dma.crf --depend .\objects\stm32f10x_dma.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_dma.o --omf_browse .\objects\stm32f10x_dma.crf --depend .\objects\stm32f10x_dma.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_exti.o --omf_browse .\objects\stm32f10x_exti.crf --depend .\objects\stm32f10x_exti.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_exti.o --omf_browse .\objects\stm32f10x_exti.crf --depend .\objects\stm32f10x_exti.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_flash.o --omf_browse .\objects\stm32f10x_flash.crf --depend .\objects\stm32f10x_flash.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_flash.o --omf_browse .\objects\stm32f10x_flash.crf --depend .\objects\stm32f10x_flash.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_fsmc.o --omf_browse .\objects\stm32f10x_fsmc.crf --depend .\objects\stm32f10x_fsmc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_fsmc.o --omf_browse .\objects\stm32f10x_fsmc.crf --depend .\objects\stm32f10x_fsmc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_i2c.o --omf_browse .\objects\stm32f10x_i2c.crf --depend .\objects\stm32f10x_i2c.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_i2c.o --omf_browse .\objects\stm32f10x_i2c.crf --depend .\objects\stm32f10x_i2c.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_iwdg.o --omf_browse .\objects\stm32f10x_iwdg.crf --depend .\objects\stm32f10x_iwdg.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_iwdg.o --omf_browse .\objects\stm32f10x_iwdg.crf --depend .\objects\stm32f10x_iwdg.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_pwr.o --omf_browse .\objects\stm32f10x_pwr.crf --depend .\objects\stm32f10x_pwr.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_pwr.o --omf_browse .\objects\stm32f10x_pwr.crf --depend .\objects\stm32f10x_pwr.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_rcc.o --omf_browse .\objects\stm32f10x_rcc.crf --depend .\objects\stm32f10x_rcc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_rcc.o --omf_browse .\objects\stm32f10x_rcc.crf --depend .\objects\stm32f10x_rcc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_rtc.o --omf_browse .\objects\stm32f10x_rtc.crf --depend .\objects\stm32f10x_rtc.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_rtc.o --omf_browse .\objects\stm32f10x_rtc.crf --depend .\objects\stm32f10x_rtc.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_sdio.o --omf_browse .\objects\stm32f10x_sdio.crf --depend .\objects\stm32f10x_sdio.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_sdio.o --omf_browse .\objects\stm32f10x_sdio.crf --depend .\objects\stm32f10x_sdio.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_spi.o --omf_browse .\objects\stm32f10x_spi.crf --depend .\objects\stm32f10x_spi.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_spi.o --omf_browse .\objects\stm32f10x_spi.crf --depend .\objects\stm32f10x_spi.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_tim.o --omf_browse .\objects\stm32f10x_tim.crf --depend .\objects\stm32f10x_tim.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_tim.o --omf_browse .\objects\stm32f10x_tim.crf --depend .\objects\stm32f10x_tim.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_usart.o --omf_browse .\objects\stm32f10x_usart.crf --depend .\objects\stm32f10x_usart.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_usart.o --omf_browse .\objects\stm32f10x_usart.crf --depend .\objects\stm32f10x_usart.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_wwdg.o --omf_browse .\objects\stm32f10x_wwdg.crf --depend .\objects\stm32f10x_wwdg.d)
+F (..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c)(0x4F66FC8C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\stm32f10x_wwdg.o --omf_browse .\objects\stm32f10x_wwdg.crf --depend .\objects\stm32f10x_wwdg.d)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4F66FC8C)
-I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5AD5AC6F)
+I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h)(0x5A1FA7D5)
 I (..\Libraries\CMSIS\Include\core_cm3.h)(0x563332E6)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\cmsis_armcc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x563332E6)
 I (..\Libraries\CMSIS\Device\ST\STM32F10x\Include\system_stm32f10x.h)(0x5346860A)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x4F66FC8C)
-F (.\src\FreeRTOS\Source\list.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
+F (.\src\FreeRTOS\Source\list.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -1309,12 +1232,12 @@ I (.\src\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
 I (.\src\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
-F (.\src\FreeRTOS\Source\queue.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+F (.\src\FreeRTOS\Source\queue.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -1324,12 +1247,12 @@ I (.\src\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
-F (.\src\FreeRTOS\Source\tasks.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
+F (.\src\FreeRTOS\Source\tasks.c)(0x58F881E0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE42DE)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -1340,11 +1263,11 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\timers.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\StackMacros.h)(0x573F3A16)
-F (.\src\FreeRTOS\Source\timers.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
+F (.\src\FreeRTOS\Source\timers.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -1355,10 +1278,10 @@ I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\queue.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\timers.h)(0x573F3A16)
-F (.\src\FreeRTOS\Source\portable\RVDS\ARM_CM3\port.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+F (.\src\FreeRTOS\Source\portable\RVDS\ARM_CM3\port.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)
@@ -1367,11 +1290,11 @@ I (.\src\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h)(0x573F3A17)
 I (.\src\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\task.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\list.h)(0x573F3A16)
-F (.\src\FreeRTOS\Source\portable\MemMang\heap_3.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I D:\workdir\adasl\adas_checkBoard\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\heap_3.o --omf_browse .\objects\heap_3.crf --depend .\objects\heap_3.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
+F (.\src\FreeRTOS\Source\portable\MemMang\heap_3.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\inc -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\Libraries\STM32_USB_Device_Library\Core\inc -I ..\Libraries\CMSIS\Device\ST\STM32F10x\Include -I ..\Libraries\CMSIS\Include -I ..\Libraries\STM32_USB_Device_Library\Class\cdc\inc -I ..\Libraries\STM32_USB_OTG_Driver\inc -I .\src\FreeRTOS\Source\include -I .\src\FreeRTOS\Source\portable\RVDS\ARM_CM3 -I .\inc-I E:\工作\产线工具\tester\tester\STM32_USB-Host-Device_Lib_V2.2.0\VCP\RTE-I d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I d:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_CL -DUSE_USB_OTG_FS -DUSE_EMBEDDED_PHY -DSTM32F10X_CL-o .\objects\heap_3.o --omf_browse .\objects\heap_3.crf --depend .\objects\heap_3.d)
+I (d:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE42DE)
 I (.\src\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE42DE)
+I (d:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE42DE)
 I (.\inc\FreeRTOSConfig.h)(0x58B7ED9B)
 I (.\src\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
 I (.\src\FreeRTOS\Source\include\portable.h)(0x573F3A16)

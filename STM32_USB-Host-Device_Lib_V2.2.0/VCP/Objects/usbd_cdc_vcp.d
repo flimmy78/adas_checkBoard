@@ -2,7 +2,7 @@
 .\objects\usbd_cdc_vcp.o: .\inc\inc_all.h
 .\objects\usbd_cdc_vcp.o: ..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h
 .\objects\usbd_cdc_vcp.o: ..\Libraries\CMSIS\Include\core_cm3.h
-.\objects\usbd_cdc_vcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usbd_cdc_vcp.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usbd_cdc_vcp.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\usbd_cdc_vcp.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
 .\objects\usbd_cdc_vcp.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
@@ -42,13 +42,13 @@
 .\objects\usbd_cdc_vcp.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h
 .\objects\usbd_cdc_vcp.o: .\inc\usbd_desc.h
 .\objects\usbd_cdc_vcp.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h
-.\objects\usbd_cdc_vcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\usbd_cdc_vcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\usbd_cdc_vcp.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usbd_cdc_vcp.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\usbd_cdc_vcp.o: .\inc\common.h
 .\objects\usbd_cdc_vcp.o: .\inc\msg.h
 .\objects\usbd_cdc_vcp.o: .\inc\FreeRTOS_inc.h
 .\objects\usbd_cdc_vcp.o: .\src\FreeRTOS\Source\include\FreeRTOS.h
-.\objects\usbd_cdc_vcp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\usbd_cdc_vcp.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\usbd_cdc_vcp.o: .\inc\FreeRTOSConfig.h
 .\objects\usbd_cdc_vcp.o: .\src\FreeRTOS\Source\include\projdefs.h
 .\objects\usbd_cdc_vcp.o: .\src\FreeRTOS\Source\include\portable.h
@@ -63,7 +63,6 @@
 .\objects\usbd_cdc_vcp.o: .\inc\can.h
 .\objects\usbd_cdc_vcp.o: .\inc\comm.h
 .\objects\usbd_cdc_vcp.o: .\inc\usb_comm.h
-.\objects\usbd_cdc_vcp.o: .\inc\uart_comm.h
 .\objects\usbd_cdc_vcp.o: .\inc\driver.h
 .\objects\usbd_cdc_vcp.o: .\inc\crc32.h
 .\objects\usbd_cdc_vcp.o: .\inc\fifo.h

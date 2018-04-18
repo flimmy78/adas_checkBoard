@@ -19,6 +19,8 @@
 
 /****************************************************************************/
 /*External  Variables */
+extern can_para_t can_para_500k,can_para_100k;
+
 /****************************************************************************/
 
 
@@ -34,7 +36,7 @@
 
 /****************************************************************************/
 /*Global  Variables */
-
+volatile bool can_send_flag = false;
 /****************************************************************************/
 
 
@@ -66,40 +68,40 @@
 
 
 
-void CAN2_RX1_IRQHandler(void)
-{
+//void CAN2_RX1_IRQHandler(void)
+//{
 
-		CanRxMsg rxMsgCan;
-		if(CAN_GetITStatus(CAN2,CAN_IT_FF1))
-		{
-			CAN_ClearITPendingBit(CAN2,CAN_IT_FF1);/**/
-		}  
-		if(CAN_GetITStatus(CAN2,CAN_IT_FOV1))
-		{
-			CAN_ClearITPendingBit(CAN2,CAN_IT_FOV1);
-		}
+//		CanRxMsg rxMsgCan;
+//		if(CAN_GetITStatus(CAN2,CAN_IT_FF1))
+//		{
+//			CAN_ClearITPendingBit(CAN2,CAN_IT_FF1);/**/
+//		}  
+//		if(CAN_GetITStatus(CAN2,CAN_IT_FOV1))
+//		{
+//			CAN_ClearITPendingBit(CAN2,CAN_IT_FOV1);
+//		}
 
-		CAN_Receive(CAN2, CAN_FIFO1, &rxMsgCan);
+//		CAN_Receive(CAN2, CAN_FIFO1, &rxMsgCan);
 
 
-}
+//}
 
-void CAN1_RX0_IRQHandler(void)
-{
+//void CAN1_RX0_IRQHandler(void)
+//{
 
-	CanRxMsg rxMsgCan;
-	if(CAN_GetITStatus(CAN1,CAN_IT_FF0))
-	{
-		CAN_ClearITPendingBit(CAN1,CAN_IT_FF0);/**/
-	}  
-	if(CAN_GetITStatus(CAN1,CAN_IT_FOV0))
-	{
-		CAN_ClearITPendingBit(CAN1,CAN_IT_FOV0);
-	}
+//	CanRxMsg rxMsgCan;
+//	if(CAN_GetITStatus(CAN1,CAN_IT_FF0))
+//	{
+//		CAN_ClearITPendingBit(CAN1,CAN_IT_FF0);/**/
+//	}  
+//	if(CAN_GetITStatus(CAN1,CAN_IT_FOV0))
+//	{
+//		CAN_ClearITPendingBit(CAN1,CAN_IT_FOV0);
+//	}
 
-	CAN_Receive(CAN1, CAN_FIFO0, &rxMsgCan);
-	
-}
+//	CAN_Receive(CAN1, CAN_FIFO0, &rxMsgCan);
+//	
+//}
 
 
 void CAN1_Config(can_para_t *can_para)
@@ -113,6 +115,7 @@ void CAN1_Config(can_para_t *can_para)
   /* GPIO clock enable */
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIO_CAN1, ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
 
   /* Configure CAN pin: RX */
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_CAN1_RX;
@@ -125,7 +128,7 @@ void CAN1_Config(can_para_t *can_para)
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_Init(GPIO_CAN1, &GPIO_InitStructure);
   
-  GPIO_PinRemapConfig(GPIO_Remapping_CAN1 , ENABLE);
+  GPIO_PinRemapConfig(GPIO_Remap2_CAN1 , ENABLE);
   
   /* CANx Periph clock enable */
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1, ENABLE);
@@ -137,7 +140,7 @@ void CAN1_Config(can_para_t *can_para)
 	
 	if (can_para->enable == false) 
 	{
-		CAN_ITConfig(CAN1, CAN_IT_FMP0 | CAN_IT_FF0 | CAN_IT_FOV0 | CAN_IT_ERR, DISABLE);
+		CAN_ITConfig(CAN1, CAN_IT_FMP0 | CAN_IT_FF0 | CAN_IT_FOV0 | CAN_IT_ERR, ENABLE);
 		return;
 	}
 	
@@ -221,7 +224,7 @@ void CAN2_Config(can_para_t *can_para)
 	
 	if (can_para->enable == false) 
 	{
-		CAN_ITConfig(CAN2, CAN_IT_FMP1 | CAN_IT_FF1 | CAN_IT_FOV1 | CAN_IT_ERR, DISABLE);
+		CAN_ITConfig(CAN2, CAN_IT_FMP1 | CAN_IT_FF1 | CAN_IT_FOV1 | CAN_IT_ERR, ENABLE);
 		return;
 	}
 	
@@ -279,13 +282,72 @@ void CAN2_Config(can_para_t *can_para)
 void can_send(void)
 {
 	CanTxMsg TxMessage;
-	u32 i;
-	//  /* Transmit */
-	TxMessage.StdId = 0x378;
-	TxMessage.RTR = CAN_RTR_DATA;
-	TxMessage.IDE = CAN_ID_STD;
-	TxMessage.DLC = 8;
-	for (i=0;i<8;i++)
-		TxMessage.Data[i] = 0xFF;
-	CAN_Transmit(CAN1,&TxMessage);
+	u32 i,j;
+	j = 10;
+
+	CAN1_Config(&can_para_500k);
+	CAN2_Config(&can_para_500k);
+	vTaskDelay(10);	
+	j = 10;
+	while (j--)
+	{
+		TxMessage.StdId = 0x378;
+		TxMessage.RTR = CAN_RTR_DATA;
+		TxMessage.IDE = CAN_ID_STD;
+		TxMessage.DLC = 8;
+		for (i=0;i<8;i++)
+			TxMessage.Data[i] = 0xFF;
+	//	CAN_Transmit(CAN1,&TxMessage);
+		if (CAN_Transmit(CAN2,&TxMessage) == CAN_TxStatus_NoMailBox)
+		{
+			TraceStr("*");
+		}
+		vTaskDelay(5);
+	}
+
+	CAN1_Config(&can_para_100k);
+	CAN2_Config(&can_para_100k);
+	vTaskDelay(10); 
+	j = 10;
+	while (j--)
+	{
+		TxMessage.StdId = 0x378;
+		TxMessage.RTR = CAN_RTR_DATA;
+		TxMessage.IDE = CAN_ID_STD;
+		TxMessage.DLC = 8;
+		for (i=0;i<8;i++)
+			TxMessage.Data[i] = 0xFF;
+	//	CAN_Transmit(CAN1,&TxMessage);
+		if (CAN_Transmit(CAN2,&TxMessage) == CAN_TxStatus_NoMailBox)
+		{
+			TraceStr("*");
+		}
+		vTaskDelay(5);
+	}
+
+
+
+	
+}
+
+
+
+void can_task(void *taskparam)
+{
+	vTaskDelay(2000);
+	can_send_flag = true;
+	while (1)
+	{
+		if (can_send_flag)
+		{
+			can_send();
+		}
+		else
+			vTaskDelay(100);
+		
+		
+	}
+
+
+	
 }

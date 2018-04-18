@@ -46,8 +46,8 @@
 
 #define			USB_TASK_PRIO			(configMAX_PRIORITIES - 1)
 #define			TEST_TASK_PRIO			(configMAX_PRIORITIES - 2)  
-#define			UART_TASK_PRIO			(configMAX_PRIORITIES - 4) 
-#define			FIRM_TASK_PRIO			(configMAX_PRIORITIES - 5) 
+#define			CAN_TASK_PRIO			(configMAX_PRIORITIES - 3) 
+
 
 
 
@@ -72,12 +72,10 @@ extern uint8_t APP_Tx_Buffer   [APP_TX_DATA_SIZE]  ;
 /*External  Functions */
 
 extern void usb_comm_task(void *taskpara);
-extern void uart_comm_task(void *taskpara);
 extern void test_task(void *taskparam);
-
+extern void can_task(void *taskparam);
 
 extern void InitUsbVar(void);
-extern void InitUartVar(void);
 extern void InitTestVar(void);
 	
 
@@ -123,23 +121,21 @@ can_para_t can_para_500k,can_para_100k;
 
 static void InitVar(void)
 {
-
-		InitUartVar();
 		InitUsbVar();
 		InitTestVar();
 
 		// Init can 500k
 		can_para_500k.baudrate = 500*1000;
 		can_para_500k.sjw = 1-1;
-		can_para_500k.bs1 = 3-1;
-		can_para_500k.bs1 = 5-1;
+		can_para_500k.bs1 = 9-1;
+		can_para_500k.bs2 = 8-1;
 		can_para_500k.enable = 1;
 
 		// Init can 100k
 		can_para_100k.baudrate = 100*1000;
 		can_para_100k.sjw = 1-1;
-		can_para_100k.bs1 = 3-1;
-		can_para_100k.bs1 = 5-1;
+		can_para_100k.bs1 = 9-1;
+		can_para_100k.bs2 = 8-1;
 		can_para_100k.enable = 1;
 		
 
@@ -152,9 +148,9 @@ extern void RCC_GetClocksFreq(RCC_ClocksTypeDef* RCC_Clocks);
 int main(void)
 {
 //  u32 i = 0;  
-	//RCC_ClocksTypeDef RCC_Clocks;
+	RCC_ClocksTypeDef RCC_Clocks;
 
-	//RCC_GetClocksFreq(&RCC_Clocks);
+	RCC_GetClocksFreq(&RCC_Clocks);
 	
 	InitVar();
 	
@@ -171,11 +167,10 @@ int main(void)
 
 
 	TraceStr("system startup... \r\n");
-	TraceStr("system startup... \r\n");
 
 	xTaskCreate(test_task, 	"test task",	configMINIMAL_STACK_SIZE,NULL,TEST_TASK_PRIO,NULL);
-  	xTaskCreate(usb_comm_task, 	"usb comm task",	configMINIMAL_STACK_SIZE,NULL,USB_TASK_PRIO,NULL);
-	xTaskCreate(uart_comm_task, "uart comm task",	configMINIMAL_STACK_SIZE,NULL,UART_TASK_PRIO,NULL);
+  xTaskCreate(usb_comm_task, 	"usb comm task",	configMINIMAL_STACK_SIZE,NULL,USB_TASK_PRIO,NULL);
+	xTaskCreate(can_task, 	"can task",	configMINIMAL_STACK_SIZE,NULL,USB_TASK_PRIO,NULL);
 	vTaskStartScheduler();
 
 while (1)

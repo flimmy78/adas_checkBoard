@@ -251,7 +251,7 @@ void TIM2_IRQHandler(void)
 	}		
 }
 
-
+extern u8  comm_uart_rx_buffer[MAX_COMM_UART_DMA_RCV_SIZE];
 /* Comm with main board */
 void UART4_IRQHandler(void)
 {
@@ -263,7 +263,7 @@ void UART4_IRQHandler(void)
 	
 	if (USART_GetITStatus(UART4, USART_IT_RXNE) != RESET)
 	{	
-		USART_ReceiveData(UART4);
+		//USART_ReceiveData(UART4);
 	}
   
 	if (USART_GetITStatus(UART4, USART_IT_IDLE) != RESET)
@@ -272,12 +272,75 @@ void UART4_IRQHandler(void)
 		USART_ReceiveData(UART4);
 		//update fifo head pointer
 		UartRxFifo.rear = (MAX_COMM_UART_DMA_RCV_SIZE-COMM_UART_RX_DMA->CNDTR);
+		//Trace("UartRxFifo.head",UartRxFifo.head);
+		//Trace("comm_uart_rx_buffer[head]",comm_uart_rx_buffer[UartRxFifo.head]);
 
 		g_check_uart_comm_msg_flag = true;
 		
 	}	
+}
 
+
+
+
+
+void CAN1_RX0_IRQHandler(void)
+{
+	CanRxMsg rxMsgME;
+	volatile int i = 0;
+	
+	if(CAN_GetITStatus(CAN1,CAN_IT_FF0))
+		CAN_ClearITPendingBit(CAN1,CAN_IT_FF0);/**/
+	if(CAN_GetITStatus(CAN1,CAN_IT_FOV0))
+		CAN_ClearITPendingBit(CAN1,CAN_IT_FOV0);
+
+	CAN_Receive(CAN1, CAN_FIFO0, &rxMsgME);
+
+	
+	if (rxMsgME.StdId >= 0x7FF)
+	{
+		i = 1;
+		return; 
+	}
+	
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+unsigned char can_sensor_flag = 0 ; // 0 : NO , 1 : OK
+void CAN2_RX1_IRQHandler(void)
+{
+	CanRxMsg	  rxMsgCar;
+	static int send_can_flag = 0;
+
+	if(CAN_GetITStatus(CAN2,CAN_IT_BOF))
+		CAN_ClearITPendingBit(CAN2,CAN_IT_BOF);
+ 	if(CAN_GetITStatus(CAN2,CAN_IT_FF1))
+		CAN_ClearITPendingBit(CAN2,CAN_IT_FF1);/**/
+	if(CAN_GetITStatus(CAN2,CAN_IT_FOV1))
+		CAN_ClearITPendingBit(CAN2,CAN_IT_FOV1);
+ 	if(CAN_GetITStatus(CAN2,CAN_IT_EPV))
+		CAN_ClearITPendingBit(CAN2,CAN_IT_FOV1);
+	
+	CAN_Receive(CAN2, CAN_FIFO1, &rxMsgCar);
+
+	if((rxMsgCar.Data[0] == 0xf0) && (rxMsgCar.Data[1] == 0xf0) && (rxMsgCar.Data[2] == 0xf0) && (rxMsgCar.Data[3] == 0xf0) 
+		&& (rxMsgCar.Data[4] == 0xf0) && (rxMsgCar.Data[5] == 0xf0) && (rxMsgCar.Data[6] == 0xf0) && (rxMsgCar.Data[7] == 0xf0))
+	can_sensor_flag = 1;
+	else
+		can_sensor_flag = 0;
+ 	//if (rxMsgCar.StdId == 0x378)
+ 	//{
+		//send_can_flag = 1;
+ 	//}
+	
+	
 
 
 }
+
 

@@ -8,7 +8,7 @@
 #define		CMD_READ					0x11
 #define 	CMD_GO						0x21
 #define 	CMD_WRITE					0x31
-#define 	CMD_ERASE					0x43
+#define 	CMD_ERASE					0x44
 #define 	CMD_WRITE_PROTECT			0x63
 #define 	CMD_WRITE_UNPROTECT			0x73
 #define 	CMD_READ_PROTECT			0x82

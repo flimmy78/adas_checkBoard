@@ -2,7 +2,7 @@
 .\objects\trace.o: .\inc\inc_all.h
 .\objects\trace.o: ..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h
 .\objects\trace.o: ..\Libraries\CMSIS\Include\core_cm3.h
-.\objects\trace.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\trace.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\trace.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\trace.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
 .\objects\trace.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
@@ -42,13 +42,13 @@
 .\objects\trace.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h
 .\objects\trace.o: .\inc\usbd_desc.h
 .\objects\trace.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h
-.\objects\trace.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\trace.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\trace.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\trace.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\trace.o: .\inc\common.h
 .\objects\trace.o: .\inc\msg.h
 .\objects\trace.o: .\inc\FreeRTOS_inc.h
 .\objects\trace.o: .\src\FreeRTOS\Source\include\FreeRTOS.h
-.\objects\trace.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\trace.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\trace.o: .\inc\FreeRTOSConfig.h
 .\objects\trace.o: .\src\FreeRTOS\Source\include\projdefs.h
 .\objects\trace.o: .\src\FreeRTOS\Source\include\portable.h
@@ -63,7 +63,6 @@
 .\objects\trace.o: .\inc\can.h
 .\objects\trace.o: .\inc\comm.h
 .\objects\trace.o: .\inc\usb_comm.h
-.\objects\trace.o: .\inc\uart_comm.h
 .\objects\trace.o: .\inc\driver.h
 .\objects\trace.o: .\inc\crc32.h
 .\objects\trace.o: .\inc\fifo.h

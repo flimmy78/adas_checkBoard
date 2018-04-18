@@ -2,7 +2,7 @@
 .\objects\driver.o: .\inc\inc_all.h
 .\objects\driver.o: ..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h
 .\objects\driver.o: ..\Libraries\CMSIS\Include\core_cm3.h
-.\objects\driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\driver.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\driver.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\driver.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
 .\objects\driver.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
@@ -42,13 +42,13 @@
 .\objects\driver.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h
 .\objects\driver.o: .\inc\usbd_desc.h
 .\objects\driver.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h
-.\objects\driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\driver.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\driver.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\driver.o: .\inc\common.h
 .\objects\driver.o: .\inc\msg.h
 .\objects\driver.o: .\inc\FreeRTOS_inc.h
 .\objects\driver.o: .\src\FreeRTOS\Source\include\FreeRTOS.h
-.\objects\driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\driver.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\driver.o: .\inc\FreeRTOSConfig.h
 .\objects\driver.o: .\src\FreeRTOS\Source\include\projdefs.h
 .\objects\driver.o: .\src\FreeRTOS\Source\include\portable.h
@@ -63,7 +63,6 @@
 .\objects\driver.o: .\inc\can.h
 .\objects\driver.o: .\inc\comm.h
 .\objects\driver.o: .\inc\usb_comm.h
-.\objects\driver.o: .\inc\uart_comm.h
 .\objects\driver.o: .\inc\driver.h
 .\objects\driver.o: .\inc\crc32.h
 .\objects\driver.o: .\inc\fifo.h

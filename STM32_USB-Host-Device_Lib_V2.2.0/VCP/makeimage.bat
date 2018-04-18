@@ -4,7 +4,7 @@
 @echo       Convert file for download and update 
 @echo ************************************************
 
-C:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o tester.bin .\objects\tester.axf
+D:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o tester.bin .\objects\tester.axf
 Addbin.exe tester.bin mcu_test_code.bin 
 
 @echo   .

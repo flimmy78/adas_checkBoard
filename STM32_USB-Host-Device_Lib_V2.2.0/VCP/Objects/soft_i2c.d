@@ -2,7 +2,7 @@
 .\objects\soft_i2c.o: .\inc\inc_all.h
 .\objects\soft_i2c.o: ..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h
 .\objects\soft_i2c.o: ..\Libraries\CMSIS\Include\core_cm3.h
-.\objects\soft_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\soft_i2c.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\soft_i2c.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\soft_i2c.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
 .\objects\soft_i2c.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
@@ -42,13 +42,13 @@
 .\objects\soft_i2c.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h
 .\objects\soft_i2c.o: .\inc\usbd_desc.h
 .\objects\soft_i2c.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h
-.\objects\soft_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\soft_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\soft_i2c.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\soft_i2c.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\soft_i2c.o: .\inc\common.h
 .\objects\soft_i2c.o: .\inc\msg.h
 .\objects\soft_i2c.o: .\inc\FreeRTOS_inc.h
 .\objects\soft_i2c.o: .\src\FreeRTOS\Source\include\FreeRTOS.h
-.\objects\soft_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\soft_i2c.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\soft_i2c.o: .\inc\FreeRTOSConfig.h
 .\objects\soft_i2c.o: .\src\FreeRTOS\Source\include\projdefs.h
 .\objects\soft_i2c.o: .\src\FreeRTOS\Source\include\portable.h
@@ -63,7 +63,6 @@
 .\objects\soft_i2c.o: .\inc\can.h
 .\objects\soft_i2c.o: .\inc\comm.h
 .\objects\soft_i2c.o: .\inc\usb_comm.h
-.\objects\soft_i2c.o: .\inc\uart_comm.h
 .\objects\soft_i2c.o: .\inc\driver.h
 .\objects\soft_i2c.o: .\inc\crc32.h
 .\objects\soft_i2c.o: .\inc\fifo.h

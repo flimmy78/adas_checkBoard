@@ -88,6 +88,7 @@ void Trace(char *buf,u32 dat)
 
 
 
+
 void TraceStr(char *buf)
 {
 
@@ -152,9 +153,18 @@ void TraceBin(char *buf,u16 len)
 
 
 
+/*
+static const u8 hex_table[16]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
 
-//static const u8 hex_table[16]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
-
+void TraceFormat(char buf)
+{
+		//u32 i = 0;
+		trace_dma_buffer[0] = hex_table[buf & 0x0f];
+		trace_dma_buffer[1] = hex_table[(buf>>4) & 0x0f];
+	
+		trace_start_TX_DMA((u32)&trace_dma_buffer,2);
+}
+*/
 void TraceHex(char *buf,u16 len)
 {
 	

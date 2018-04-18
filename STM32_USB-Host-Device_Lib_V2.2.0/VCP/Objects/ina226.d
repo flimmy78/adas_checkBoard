@@ -2,7 +2,7 @@
 .\objects\ina226.o: .\inc\inc_all.h
 .\objects\ina226.o: ..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h
 .\objects\ina226.o: ..\Libraries\CMSIS\Include\core_cm3.h
-.\objects\ina226.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ina226.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ina226.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\ina226.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
 .\objects\ina226.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
@@ -42,13 +42,13 @@
 .\objects\ina226.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h
 .\objects\ina226.o: .\inc\usbd_desc.h
 .\objects\ina226.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h
-.\objects\ina226.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\ina226.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\ina226.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ina226.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\ina226.o: .\inc\common.h
 .\objects\ina226.o: .\inc\msg.h
 .\objects\ina226.o: .\inc\FreeRTOS_inc.h
 .\objects\ina226.o: .\src\FreeRTOS\Source\include\FreeRTOS.h
-.\objects\ina226.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\ina226.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\ina226.o: .\inc\FreeRTOSConfig.h
 .\objects\ina226.o: .\src\FreeRTOS\Source\include\projdefs.h
 .\objects\ina226.o: .\src\FreeRTOS\Source\include\portable.h
@@ -63,7 +63,6 @@
 .\objects\ina226.o: .\inc\can.h
 .\objects\ina226.o: .\inc\comm.h
 .\objects\ina226.o: .\inc\usb_comm.h
-.\objects\ina226.o: .\inc\uart_comm.h
 .\objects\ina226.o: .\inc\driver.h
 .\objects\ina226.o: .\inc\crc32.h
 .\objects\ina226.o: .\inc\fifo.h

@@ -114,9 +114,14 @@
 #define 	TRACE_UART_TX_DMA					DMA1_Channel4
 
 
-#define 	COMM_UART							UART4
-#define 	COMM_UART_BAUDRATE					460800
+#define 	COMM_UART								UART4
+#define 	COMM_UART_BAUDRATE					115200
 #define		COMM_UART_TX_DMA					DMA2_Channel5
 #define		COMM_UART_RX_DMA					DMA2_Channel3
 
+
+#define 	WifiTest_UART							USART2
+#define 	WifiTest_UART_BAUDRATE					115200
+#define		WifiTest_UART_TX_DMA					DMA1_Channel7
+#define		WifiTest_UART_RX_DMA					DMA1_Channel6
 

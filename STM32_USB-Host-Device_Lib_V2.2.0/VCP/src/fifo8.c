@@ -72,6 +72,14 @@ u16  FIFOFreeLen( FIFO_t *stFIFO)
 {
 	return (stFIFO->FIFO_size - FIFOLen(stFIFO));
 }
+extern u8  comm_uart_rx_buffer[MAX_COMM_UART_DMA_RCV_SIZE];
+void ReinitFIFO(FIFO_t *stFIFO)
+{
+	/*int i;
+	for(i=0;i<MAX_COMM_UART_DMA_RCV_SIZE;i++)
+		comm_uart_rx_buffer[i] = 0;*/
+	stFIFO->head = stFIFO->rear = 0;
+}
 
 
 
@@ -138,7 +146,7 @@ static void CheckFrameHeaderFromFIFO(FIFO_t *stFIFO, u8 *framebuf)
 *
 ****************************************************************************************/
 
-bool RcvFrameFromFIFO(FIFO_t *stFIFO, u8 *framebuf)
+static bool RcvFrameFromFIFO(FIFO_t *stFIFO, u8 *framebuf)
 {
 	/* Find a head */
 	u16 frame_len,i;

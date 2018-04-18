@@ -149,7 +149,7 @@
 #endif /* HSI_VALUE */
 
 /**
- * @brief STM32F10x Standard Peripheral Library version number V3.6.3  
+ * @brief STM32F10x Standard Peripheral Library version number V3.6.3
    */
 #define __STM32F10X_STDPERIPH_VERSION_MAIN   (0x03) /*!< [31:24] main version */
 #define __STM32F10X_STDPERIPH_VERSION_SUB1   (0x06) /*!< [23:16] sub1 version */
@@ -1415,6 +1415,7 @@ typedef struct
 #define USART3              ((USART_TypeDef *) USART3_BASE)
 #define UART4               ((USART_TypeDef *) UART4_BASE)
 #define UART5               ((USART_TypeDef *) UART5_BASE)
+#define UART1               ((USART_TypeDef *) UART1_BASE)
 #define I2C1                ((I2C_TypeDef *) I2C1_BASE)
 #define I2C2                ((I2C_TypeDef *) I2C2_BASE)
 #define CAN1                ((CAN_TypeDef *) CAN1_BASE)

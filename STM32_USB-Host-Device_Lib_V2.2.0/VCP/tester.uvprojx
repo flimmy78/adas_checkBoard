@@ -15,7 +15,7 @@
         <TargetCommonOption>
           <Device>STM32F105RB</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F1xx_DFP.2.1.0</PackID>
+          <PackID>Keil.STM32F1xx_DFP.2.2.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x10000) IROM(0x08000000,0x20000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -79,9 +79,9 @@
             <nStopB2X>0</nStopB2X>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
+            <UserProg1Name>makeimage.bat</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -412,11 +412,6 @@
               <FileType>1</FileType>
               <FilePath>..\Libraries\STM32_USB_OTG_Driver\src\usb_dcd_int.c</FilePath>
             </File>
-            <File>
-              <FileName>bin_locate.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\src\bin_locate.s</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -506,11 +501,6 @@
               <FileName>usb_comm.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\usb_comm.c</FilePath>
-            </File>
-            <File>
-              <FileName>uart_comm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\uart_comm.c</FilePath>
             </File>
             <File>
               <FileName>test.c</FileName>

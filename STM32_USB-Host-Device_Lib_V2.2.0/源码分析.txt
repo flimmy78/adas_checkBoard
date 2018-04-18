@@ -1,0 +1,93 @@
+test_task
+   RcvFrameFromUart(&UartRxFifo,UartRcvFrameBuffer)   //接收产品主板软件的串口消息
+   UartCommFuncs((comm_head_t *)UartRcvFrameBuffer);
+      UartTestServiceCmd(msg_head);
+
+   xQueueReceive(Test_Queue,&msg_queue,10)           //接收  PC串口任务   的消息队列
+   TestFuncs((comm_head_t *)msg_head->msg_data);       //Test_Queue  ??;  if (xQueueReceive(Test_Queue,&msg_queue,10)==pdTRUE){   } ; msg_head = (msg_head_t *)msg_queue.msg_addr;
+	TestServiceCmd(msg_head);
+
+		TestStartTest();SetTestStage(TEST_RUNNING);
+		SetTestStage(TEST_RUNNING);
+		TestCmdReply(true,MSG_TYPE_CMD_START_TEST_REQ);
+		   MsgSendFromTest(comm_head,TASK_USB);
+		      xQueueSend(Usb_Queue, &msg_queue, 20)
+
+		TestStartWarn();
+
+		TestSwitchScreen();
+
+		TestBootInIAP();
+		TestCmdReply(true,MSG_TYPE_CMD_BOOT_IN_IAP_MODE_REQ);
+		   MsgSendFromTest(comm_head,TASK_USB);
+
+		FirmCmdEnableRP();
+		vTaskDelay(200);   // Wait for system reset
+		TestCmdReply(true,MSG_TYPE_CMD_CRYPT_REQ);
+		   MsgSendFromTest(comm_head,TASK_USB);
+
+		BootNoCan();
+		SetTestStage(TEST_SLEEP);
+		TestCmdReply(true,MSG_TYPE_CMD_SLEEP_CURRENT_REQ);
+		   MsgSendFromTest(comm_head,TASK_USB);
+   LedFunc();
+   ReadTestPara();
+
+
+usb_comm_task
+
+   RcvFrameFromUsb(&UsbRxFifo,UsbRcvFrameBuffer);       //接收PC 串口数据
+   UsbCommFuncs(UsbRcvFrameBuffer);
+      msg_head = (comm_head_t *)framebuf;
+
+      UsbCommServiceFile(msg_head);
+	 UsbWriteFile(msg_head);
+	    MsgSendFromUsb(msg_head,TASK_TEST);
+		xQueueSend(Test_Queue, &msg_queue, 20)
+
+      UsbCommServiceCmd(msg_head);
+	 MsgSendFromUsb(msg_head,TASK_TEST);
+
+   xQueueReceive(Usb_Queue,&msg_queue,10);
+   UsbFuncs((comm_head_t *)msg_head->msg_data);
+      SendFrame((u8 *)msg_head,msg_head->msg_len);
+
+
+
+如何处理与串口之间的消息
+
+
+
+
+UsbRcvFrameBuffer  -->    msg_head (usb_msg_head)     -->    msg_head = (msg_head_t *)msg_addr;  memcpy(msg_head->msg_data,&usb_msg_head->start_bytes,usb_msg_head->msg_len);   -->   msg_queue.msg_addr = (u32)msg_addr;   -->   xQueueSend(Test_Queue, &msg_queue, 20);  
+
+
+
+
+
+
+TestFuncs
+   TestServiceCmd
+
+TestServiceCmd
+   TestStartTest(void)
+      drv_boot_high
+TestServiceCmd(comm_head_t *msg_head)
+   TestBootInIAP(void)
+      drv_boot_high
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,7 +6,7 @@
 .\objects\usbd_cdc_core.o: .\inc\usb_conf.h
 .\objects\usbd_cdc_core.o: ..\Libraries\CMSIS\Device\ST\STM32F10x\Include\stm32f10x.h
 .\objects\usbd_cdc_core.o: ..\Libraries\CMSIS\Include\core_cm3.h
-.\objects\usbd_cdc_core.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usbd_cdc_core.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usbd_cdc_core.o: ..\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\usbd_cdc_core.o: ..\Libraries\CMSIS\Include\cmsis_armcc.h
 .\objects\usbd_cdc_core.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
@@ -42,13 +42,13 @@
 .\objects\usbd_cdc_core.o: .\inc\system_settings.h
 .\objects\usbd_cdc_core.o: .\inc\usbd_cdc_vcp.h
 .\objects\usbd_cdc_core.o: ..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h
-.\objects\usbd_cdc_core.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\usbd_cdc_core.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\usbd_cdc_core.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usbd_cdc_core.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\usbd_cdc_core.o: .\inc\common.h
 .\objects\usbd_cdc_core.o: .\inc\msg.h
 .\objects\usbd_cdc_core.o: .\inc\FreeRTOS_inc.h
 .\objects\usbd_cdc_core.o: .\src\FreeRTOS\Source\include\FreeRTOS.h
-.\objects\usbd_cdc_core.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\usbd_cdc_core.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\usbd_cdc_core.o: .\inc\FreeRTOSConfig.h
 .\objects\usbd_cdc_core.o: .\src\FreeRTOS\Source\include\projdefs.h
 .\objects\usbd_cdc_core.o: .\src\FreeRTOS\Source\include\portable.h
@@ -63,7 +63,6 @@
 .\objects\usbd_cdc_core.o: .\inc\can.h
 .\objects\usbd_cdc_core.o: .\inc\comm.h
 .\objects\usbd_cdc_core.o: .\inc\usb_comm.h
-.\objects\usbd_cdc_core.o: .\inc\uart_comm.h
 .\objects\usbd_cdc_core.o: .\inc\driver.h
 .\objects\usbd_cdc_core.o: .\inc\crc32.h
 .\objects\usbd_cdc_core.o: .\inc\fifo.h

@@ -2,18 +2,15 @@
 typedef enum TASK_ID {
 
 	TASK_USB = 0x01,
-	TASK_UART = 0x02,
-	TASK_TEST = 0x03,
+	TASK_TEST = 0x02,
 	TASK_ALL,
 }task_id_enum;
 
 	
 typedef enum {
 
-	MSG_UART_USB   = (TASK_UART<<8)|TASK_USB,
-	MSG_USB_UART = (TASK_USB<<8)|TASK_UART,
-
-	
+	MSG_USB_TEST = (TASK_USB<<8)|TASK_TEST,
+	MSG_TEST_USB = (TASK_TEST<<8)|TASK_USB,
 }msg_type_enum;
 	
 	
@@ -85,7 +82,7 @@ typedef struct MSG_HEADER
 #define		TP_DEBUG_CMD_ID			0x19
 
 
-
+#if 0
 /* Service type */
 
 #define  	SERVICE_FILE			0x01
@@ -135,8 +132,9 @@ typedef struct MSG_HEADER
 
 #define		MSG_CMD_TEST_RESP			0x08		
 
-#define		MSG_DEBUG_MCU_COMMAND 0x05
+#define		MSG_DEBUG_MCU_COMMAND 		0x05
 
+#endif
 /**************************************************************************************/
 /**************************************************************************************/
 
@@ -150,9 +148,6 @@ typedef struct MSG_HEADER
 
 
 /**************************************************************************************/
-#define 	FIRM_MODE		0x01
-#define 	COMM_MODE		0x02
-
 
 /**************************************************************************************/
 
@@ -203,22 +198,6 @@ typedef enum
 
 
 
-typedef struct 
-{
-	u32 filelen;
-	u32 curpos;
-	u32 file_type;
-	u32 crc32;
-	u8 	filename[MAX_FILENAME_LEN];
-	u8 *buf;
-	u16 total_packets;
-	u16 cur_packet;
-	u32 cur_packet_length;
-	u16 file_flag;
-	
-
-}NET_FILE_PARA_t;
-
 
 
 
@@ -260,5 +239,91 @@ typedef struct
 	
 }TLV_CMD_SWITCH_t;
 
+
+typedef struct
+{
+	u16  type;
+	u16  len;
+	u32  start;
+}TLV_FIRM_FILE_t;
+
+
+
+typedef enum
+{
+	NONE_TEST,
+	TEST_DOWNLOAD,
+	TEST_RUNNING,
+	TEST_OK,
+	FIRM_DOWNLOAD,
+	TEST_POWER,
+	TEST_SLEEP,
+	TEST_WORK,
+	
+	//ADD BY YUZONGYONG
+	MAINBOARD_WORK,   //主板正常工作
+	MAINBOARD_OFF,			//主板关机状态
+	MAINBOARD_NONE
+	
+}TEST_STAGE_enum;
+
+
+
+
+
+
+
+
+
+
+
+
+
+// UART
+
+#define 	UART_HEAD_LENGTH			sizeof(comm_head_t)
+
+#define 	MSG_CRC_OFFSET				8
+
+#define 	UART_HEAD_START_BYTES		0xAAAAAAAA
+
+#define 	MAX_UART_FRAME_LENGTH		(1024+64)
+#define 	MIN_UART_FRAME_LENGTH		UART_HEAD_LENGTH
+
+#define 	MAX_COMM_UART_DMA_RCV_SIZE			(2 * 1024 + 200) 
+#define 	MAX_WIFITest_UART_DMA_RCV_SIZE			(1024) 
+
+#define 	MAX_COMM_UART_DMA_SND_SIZE			(2 * 1024 + 200)
+#define 	MAX_COMM_UART_FRAME_BUFFER_SIZE		(1024+256)
+
+
+
+// ADC and measure
+
+
+#define 	ADC1_DR_Address    ((u32)0x4001244C)
+#define 	ADC_AGV_NUM			16//16
+#define		TOTAL_ADC_NUM		9
+
+
+#define 	RANK1_RATIO			(11/10)		//PC0
+#define 	RANK2_RATIO			(167.5/20)
+#define 	RANK3_RATIO			(167.5/20)
+#define 	RANK4_RATIO			(21/20)
+#define 	RANK5_RATIO			(21/20)
+#define 	RANK6_RATIO			(41/20)
+
+
+typedef struct
+{
+	//INA226
+	u32 WorkCurrent;			//0.1mA
+	u32 SleepCurrent;			//0.1mA	
+	u32 BusVoltage;				//0.1V
+	u32 Power;					// ?
+	//ADC
+	u32 Voltage[TOTAL_ADC_NUM];	// 0.01V
+	
+}Measurement_Para_t;
 
 
