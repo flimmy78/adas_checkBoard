@@ -64,23 +64,23 @@ extern u8 GetTestStage(void);
 extern u8 GetMainBoard_State();
 static void i2c_scl_low()
 {
-	GPIO_ResetBits(I2C2_SCL_PORT,I2C2_SCL_PIN);
+	GPIO_ResetBits(I2C2_SCL_PORT, I2C2_SCL_PIN);
 }
 
 static void i2c_scl_high()
 {
-	GPIO_SetBits(I2C2_SCL_PORT,I2C2_SCL_PIN);
+	GPIO_SetBits(I2C2_SCL_PORT, I2C2_SCL_PIN);
 }
 
 
 static void i2c_sda_low()
 {
-	GPIO_ResetBits(I2C2_SDA_PORT,I2C2_SDA_PIN);
+	GPIO_ResetBits(I2C2_SDA_PORT, I2C2_SDA_PIN);
 }
 
 static void i2c_sda_high()
 {
-	GPIO_SetBits(I2C2_SDA_PORT,I2C2_SDA_PIN);
+	GPIO_SetBits(I2C2_SDA_PORT, I2C2_SDA_PIN);
 }
 
 
@@ -88,24 +88,30 @@ static void i2c_sda_high()
 static void i2c_sda_dir_in()
 {
 	//Release SDA
-	GPIO_SetBits(I2C2_SDA_PORT,I2C2_SDA_PIN);
+	GPIO_SetBits(I2C2_SDA_PORT, I2C2_SDA_PIN);
 }
 
 static void i2c_sda_dir_out()
 {
-	//GPIO_SetBits(I2C2_SDA_PORT,I2C2_SDA_PIN);;		// NULL	
+	//GPIO_SetBits(I2C2_SDA_PORT,I2C2_SDA_PIN);;		// NULL
 }
 
 static u8 i2c_sda_value()
 {
-	if (I2C2_SDA_PORT->IDR & I2C2_SDA_PIN) return 1;	//No ack
-	else return 0;		//Ack ok
+	if (I2C2_SDA_PORT->IDR & I2C2_SDA_PIN) {
+		return 1;    //No ack
+	} else {
+		return 0;    //Ack ok
+	}
 }
 
 static u8 i2c_scl_value()
 {
-	if (I2C2_SCL_PORT->IDR & I2C2_SCL_PIN) return 1;
-	else return 0;		
+	if (I2C2_SCL_PORT->IDR & I2C2_SCL_PIN) {
+		return 1;
+	} else {
+		return 0;
+	}
 }
 
 static void i2c_delay1()
@@ -140,8 +146,8 @@ static void init_i2c_gpio(void)
 	GPIO_InitStructure.GPIO_Pin = I2C2_SDA_PIN;
 	GPIO_Init(I2C2_SDA_PORT, &GPIO_InitStructure);
 
-	GPIO_SetBits(I2C2_SCL_PORT,I2C2_SCL_PIN);
-	GPIO_SetBits(I2C2_SDA_PORT,I2C2_SDA_PIN);
+	GPIO_SetBits(I2C2_SCL_PORT, I2C2_SCL_PIN);
+	GPIO_SetBits(I2C2_SDA_PORT, I2C2_SDA_PIN);
 }
 
 
@@ -159,10 +165,10 @@ static void init_i2c_dev(void)
 	I2C_INA226.scl_value = i2c_scl_value;
 	I2C_INA226.delay1    = i2c_delay1;
 	I2C_INA226.delay2    = i2c_delay2;
-	I2C_INA226.addr    	 = INA226_ADDR<<1;
+	I2C_INA226.addr    	 = INA226_ADDR << 1;
 	I2C_INA226.clock_stretch    = 1;
 	//I2C_INA226.wait_bus_idle = wait_bus_idle;
-	
+
 }
 
 
@@ -176,15 +182,15 @@ void init_INA226_normal(void)
 
 
 	// Read ID
-	soft_i2c_read(&I2C_INA226,ID_REG,buf,2);
-	soft_i2c_read(&I2C_INA226,DIE_REG,buf,2);
+	soft_i2c_read(&I2C_INA226, ID_REG, buf, 2);
+	soft_i2c_read(&I2C_INA226, DIE_REG, buf, 2);
 
 
 	// 1. Reset
 	tmp = RST_BIT;
-	buf[0] = (tmp>>8) & 0xFF;
+	buf[0] = (tmp >> 8) & 0xFF;
 	buf[1] = tmp & 0xFF;
-	soft_i2c_write(&I2C_INA226,CONFIG_REG,buf,2);
+	soft_i2c_write(&I2C_INA226, CONFIG_REG, buf, 2);
 	drv_delayms(10);
 
 	// 2. Update cal reg, max_current = 3A, R= 50mR
@@ -192,16 +198,17 @@ void init_INA226_normal(void)
 	// current_lsb = (max_current/32768) = 0.1mA/bit
 	buf[0] = 0x04;
 	buf[1] = 0x00;
-	soft_i2c_write(&I2C_INA226,CAL_REG,buf,2);
+	soft_i2c_write(&I2C_INA226, CAL_REG, buf, 2);
 
 
-	tmp = NOT_RST_BIT | B14_B12 | AVG512 | VBUSCT_1100us | VSHCT_1100us | MODE_SHUNT_BUS_CONTINOUS;
-	buf[0] = (tmp>>8) & 0xFF;
+	tmp = NOT_RST_BIT | B14_B12 | AVG512 | VBUSCT_1100us | VSHCT_1100us |
+	      MODE_SHUNT_BUS_CONTINOUS;
+	buf[0] = (tmp >> 8) & 0xFF;
 	buf[1] = tmp & 0xFF;
-	soft_i2c_write(&I2C_INA226,CONFIG_REG,buf,2);
+	soft_i2c_write(&I2C_INA226, CONFIG_REG, buf, 2);
 
 
-	
+
 }
 
 
@@ -216,15 +223,15 @@ void init_INA226_sleep(void)
 
 
 	// Read ID
-	soft_i2c_read(&I2C_INA226,ID_REG,buf,2);
-	soft_i2c_read(&I2C_INA226,DIE_REG,buf,2);
+	soft_i2c_read(&I2C_INA226, ID_REG, buf, 2);
+	soft_i2c_read(&I2C_INA226, DIE_REG, buf, 2);
 
 
 	// 1. Reset
 	tmp = RST_BIT;
-	buf[0] = (tmp>>8) & 0xFF;
+	buf[0] = (tmp >> 8) & 0xFF;
 	buf[1] = tmp & 0xFF;
-	soft_i2c_write(&I2C_INA226,CONFIG_REG,buf,2);
+	soft_i2c_write(&I2C_INA226, CONFIG_REG, buf, 2);
 	drv_delayms(10);
 
 	// 2. Update cal reg, max_current = 50mA, R= 20mR
@@ -232,17 +239,18 @@ void init_INA226_sleep(void)
 	// current_lsb = (max_current/32768) = 1.5uA/bit  = 20uA/bit
 	buf[0] = 0x32;
 	buf[1] = 0x00;
-	soft_i2c_write(&I2C_INA226,CAL_REG,buf,2);
+	soft_i2c_write(&I2C_INA226, CAL_REG, buf, 2);
 
 
-	// 3. start  
-	tmp = NOT_RST_BIT | B14_B12 | AVG256 | VBUSCT_1100us | VSHCT_1100us | MODE_SHUNT_BUS_CONTINOUS;
-	buf[0] = (tmp>>8) & 0xFF;
+	// 3. start
+	tmp = NOT_RST_BIT | B14_B12 | AVG256 | VBUSCT_1100us | VSHCT_1100us |
+	      MODE_SHUNT_BUS_CONTINOUS;
+	buf[0] = (tmp >> 8) & 0xFF;
 	buf[1] = tmp & 0xFF;
-	soft_i2c_write(&I2C_INA226,CONFIG_REG,buf,2);
+	soft_i2c_write(&I2C_INA226, CONFIG_REG, buf, 2);
 
 
-	
+
 }
 
 
@@ -252,28 +260,28 @@ extern u16 Current0;
 extern u16 Current1;
 void ReadINA226(void)
 {
-	u16 shunt,bus,cal;
-//	u16 current;
+	u16 shunt, bus, cal;
+	//	u16 current;
 	u8 buf[2];
 	u32 tmp;
 
-	soft_i2c_read(&I2C_INA226,SHUNT_V_REG,buf,2);
-	shunt = buf[0]*256 + buf[1];
+	soft_i2c_read(&I2C_INA226, SHUNT_V_REG, buf, 2);
+	shunt = buf[0] * 256 + buf[1];
 	//Trace("shunt",shunt);
 
-	soft_i2c_read(&I2C_INA226,BUS_V_REG,buf,2);
-	bus = buf[0]*256 + buf[1];
+	soft_i2c_read(&I2C_INA226, BUS_V_REG, buf, 2);
+	bus = buf[0] * 256 + buf[1];
 
 	//soft_i2c_read(&I2C_INA226,CURRENT_REG,buf,2);
 	//current = buf[0]*256 + buf[1];
 
-	soft_i2c_read(&I2C_INA226,CAL_REG,buf,2);
-	cal = buf[0]*256 + buf[1];
+	soft_i2c_read(&I2C_INA226, CAL_REG, buf, 2);
+	cal = buf[0] * 256 + buf[1];
 
 	//Trace("cal",cal);
-	
+
 	MeasPara.BusVoltage = (bus * 10) / 8;						// mV
-//	MeasPara.WorkCurrent = (shunt * cal) / 2048;  				// 0.1mA
+	//	MeasPara.WorkCurrent = (shunt * cal) / 2048;  				// 0.1mA
 	tmp = (shunt * cal) / 2048;  				// 0.1mA
 
 
@@ -281,31 +289,27 @@ void ReadINA226(void)
 	MeasPara.SleepCurrent = 0;
 
 
-	if (GetTestStage() == TEST_WORK)
-	{
+	if (GetTestStage() == TEST_WORK) {
 		MeasPara.WorkCurrent = tmp;
-	 	MeasPara.SleepCurrent = 0;
+		MeasPara.SleepCurrent = 0;
 	}
-	if (GetTestStage() == TEST_SLEEP)
-	{
+	if (GetTestStage() == TEST_SLEEP) {
 		MeasPara.WorkCurrent = 0;
-	 	MeasPara.SleepCurrent = tmp;
-	}	
-	
+		MeasPara.SleepCurrent = tmp;
+	}
 
-	
-	if(GetMainBoard_State() == MAINBOARD_WORK)
-	{
+
+
+	if (GetMainBoard_State() == MAINBOARD_WORK) {
 		MeasPara.WorkCurrent = tmp;
-	 	MeasPara.SleepCurrent = 0;
-		
+		MeasPara.SleepCurrent = 0;
+
 		Current0 = MeasPara.WorkCurrent;
 	}
 
-	if(GetMainBoard_State() == MAINBOARD_OFF)
-	{
+	if (GetMainBoard_State() == MAINBOARD_OFF) {
 		MeasPara.WorkCurrent = 0;
-	 	MeasPara.SleepCurrent = tmp;
+		MeasPara.SleepCurrent = tmp;
 		Current1 = MeasPara.SleepCurrent;
 	}
 
@@ -315,6 +319,6 @@ void ReadINA226(void)
 
 	TraceStr(strbuf);
 
-	
+
 }
 

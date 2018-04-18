@@ -4,35 +4,33 @@ typedef enum TASK_ID {
 	TASK_USB = 0x01,
 	TASK_TEST = 0x02,
 	TASK_ALL,
-}task_id_enum;
+} task_id_enum;
 
-	
+
 typedef enum {
 
-	MSG_USB_TEST = (TASK_USB<<8)|TASK_TEST,
-	MSG_TEST_USB = (TASK_TEST<<8)|TASK_USB,
-}msg_type_enum;
-	
-	
+	MSG_USB_TEST = (TASK_USB << 8) | TASK_TEST,
+	MSG_TEST_USB = (TASK_TEST << 8) | TASK_USB,
+} msg_type_enum;
+
+
 
 
 
 // MSG header for msgs
 
-typedef struct MSG_QUEUE
-{
+typedef struct MSG_QUEUE {
 	u32 msg_addr;
-}msg_queue_t;
+} msg_queue_t;
 
 
-typedef struct MSG_HEADER
-{
+typedef struct MSG_HEADER {
 	u8 *msg_data;			/* Pointer to msg body */
 	u16 cmd;
 	task_id_enum  snd_task_id;
 	task_id_enum  rcv_task_id;
-	
-}msg_head_t;
+
+} msg_head_t;
 
 
 
@@ -130,7 +128,7 @@ typedef struct MSG_HEADER
 #define		MSG_CMD_RESET_ME_RESP		0x02
 #define		MSG_CMD_RESET_DVR_RESP		0x03
 
-#define		MSG_CMD_TEST_RESP			0x08		
+#define		MSG_CMD_TEST_RESP			0x08
 
 #define		MSG_DEBUG_MCU_COMMAND 		0x05
 
@@ -152,46 +150,41 @@ typedef struct MSG_HEADER
 /**************************************************************************************/
 
 
-typedef enum
-{
+typedef enum {
 	FILE_READ,
 	FILE_WRITE,
 	FILE_NONE_OP
-}TCP_FILE_OP_enum;
+} TCP_FILE_OP_enum;
 
 /*   IT to UART app msg  */
 
-typedef struct 
-{
+typedef struct {
 	u32  len;
 	u8   *buff;
 
-}IT_UART_msg_t;
+} IT_UART_msg_t;
 
 
 /* uart -> hi3518 */
-typedef struct 
-{
+typedef struct {
 	u32  len;
 	u8   *buff;
 
-}UART_hi3518_msg_t;
+} UART_hi3518_msg_t;
 
 /* wifi -> uart */
-typedef struct 
-{
+typedef struct {
 	u32  len;
 	u8   *buff;
 
-}hi3518_UART_msg_t;
+} hi3518_UART_msg_t;
 
 
-typedef enum
-{
+typedef enum {
 	FILE_FLASH,
 	FILE_ME,
 	MAX_FILE_TYPE,
-}FILE_TYPE_enum;
+} FILE_TYPE_enum;
 
 
 
@@ -201,56 +194,50 @@ typedef enum
 
 
 
-typedef struct
-{
+typedef struct {
 	u16   type;
 	u16   length;
-}TLV_HEADER_t;
+} TLV_HEADER_t;
 
 
 
 
-typedef struct
-{
+typedef struct {
 	u16 type;
 	u16 len;
 	u16	total_packets;
 	u16	cur_packet;
 	u16 cur_data_length;
-}TP_FILE_PACKET_t;
+} TP_FILE_PACKET_t;
 
 
-typedef struct
-{
+typedef struct {
 	u16  type;
 	u16  len;
 	u8 	filename[MAX_FILENAME_LEN];
 	u32	filelen;
 	u32	crc32;
 
-}TLV_FILE_PARA_t;
+} TLV_FILE_PARA_t;
 
 
-typedef struct
-{
+typedef struct {
 	u16  type;
 	u16  len;
 	u16  curVideoSource;
-	
-}TLV_CMD_SWITCH_t;
+
+} TLV_CMD_SWITCH_t;
 
 
-typedef struct
-{
+typedef struct {
 	u16  type;
 	u16  len;
 	u32  start;
-}TLV_FIRM_FILE_t;
+} TLV_FIRM_FILE_t;
 
 
 
-typedef enum
-{
+typedef enum {
 	NONE_TEST,
 	TEST_DOWNLOAD,
 	TEST_RUNNING,
@@ -259,13 +246,13 @@ typedef enum
 	TEST_POWER,
 	TEST_SLEEP,
 	TEST_WORK,
-	
+
 	//ADD BY YUZONGYONG
 	MAINBOARD_WORK,   //主板正常工作
 	MAINBOARD_OFF,			//主板关机状态
 	MAINBOARD_NONE
-	
-}TEST_STAGE_enum;
+
+} TEST_STAGE_enum;
 
 
 
@@ -290,8 +277,8 @@ typedef enum
 #define 	MAX_UART_FRAME_LENGTH		(1024+64)
 #define 	MIN_UART_FRAME_LENGTH		UART_HEAD_LENGTH
 
-#define 	MAX_COMM_UART_DMA_RCV_SIZE			(2 * 1024 + 200) 
-#define 	MAX_WIFITest_UART_DMA_RCV_SIZE			(1024) 
+#define 	MAX_COMM_UART_DMA_RCV_SIZE			(2 * 1024 + 200)
+#define 	MAX_WIFITest_UART_DMA_RCV_SIZE			(1024)
 
 #define 	MAX_COMM_UART_DMA_SND_SIZE			(2 * 1024 + 200)
 #define 	MAX_COMM_UART_FRAME_BUFFER_SIZE		(1024+256)
@@ -314,16 +301,15 @@ typedef enum
 #define 	RANK6_RATIO			(41/20)
 
 
-typedef struct
-{
+typedef struct {
 	//INA226
 	u32 WorkCurrent;			//0.1mA
-	u32 SleepCurrent;			//0.1mA	
+	u32 SleepCurrent;			//0.1mA
 	u32 BusVoltage;				//0.1V
 	u32 Power;					// ?
 	//ADC
 	u32 Voltage[TOTAL_ADC_NUM];	// 0.01V
-	
-}Measurement_Para_t;
+
+} Measurement_Para_t;
 
 

@@ -19,23 +19,22 @@
 
 /***********************************************************************************/
 // * Variables
- 
- typedef struct 
- {
-	 
-	 void	 (*scl_low)(void);
-	 void	 (*scl_high)(void);
-	 void	 (*sda_low)(void);
-	 void	 (*sda_high)(void);  
-	 void	 (*sda_dir_in)(void);
-	 void	 (*sda_dir_out)(void);
-	 u8 	 (*sda_value)(void);	 
-	 u8 	 (*scl_value)(void);
-	 void	 (*delay1)(void);			//5 us
-	 void	 (*delay2)(void);			// 100us
-	 u8 	 addr;
-	 u8 	 clock_stretch;
- }I2C_DEV_t;
+
+typedef struct {
+
+	void (*scl_low)(void);
+	void (*scl_high)(void);
+	void (*sda_low)(void);
+	void (*sda_high)(void);
+	void (*sda_dir_in)(void);
+	void (*sda_dir_out)(void);
+	u8(*sda_value)(void);
+	u8(*scl_value)(void);
+	void (*delay1)(void);			//5 us
+	void (*delay2)(void);			// 100us
+	u8 	 addr;
+	u8 	 clock_stretch;
+} I2C_DEV_t;
 
 
 // ***********************************************************************************/
@@ -48,8 +47,10 @@
  * Function Prototypes
  ***********************************************************************************/
 
-unsigned char soft_i2c_write(I2C_DEV_t *i2c_dev, unsigned char subaddr, unsigned char *buff, int bytenum);
-unsigned char soft_i2c_read(I2C_DEV_t *i2c_dev, unsigned char subaddr, unsigned char *buff, int bytenum);
+unsigned char soft_i2c_write(I2C_DEV_t *i2c_dev, unsigned char subaddr,
+                             unsigned char *buff, int bytenum);
+unsigned char soft_i2c_read(I2C_DEV_t *i2c_dev, unsigned char subaddr,
+                            unsigned char *buff, int bytenum);
 
 /***********************************************************************************
  * External Function

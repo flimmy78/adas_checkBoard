@@ -4,7 +4,7 @@
   * @author  MCD Application Team
   * @version V3.6.1
   * @date    05-March-2012
-  * @brief   This file contains all the functions prototypes for the PWR firmware 
+  * @brief   This file contains all the functions prototypes for the PWR firmware
   *          library.
   ******************************************************************************
   * @attention
@@ -17,8 +17,8 @@
   *
   *        http://www.st.com/software_license_agreement_liberty_v2
   *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   * See the License for the specific language governing permissions and
   * limitations under the License.
@@ -31,7 +31,7 @@
 #define __STM32F10x_PWR_H
 
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -43,23 +43,23 @@
 
 /** @addtogroup PWR
   * @{
-  */ 
+  */
 
 /** @defgroup PWR_Exported_Types
   * @{
-  */ 
+  */
 
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup PWR_Exported_Constants
   * @{
-  */ 
+  */
 
-/** @defgroup PVD_detection_level 
+/** @defgroup PVD_detection_level
   * @{
-  */ 
+  */
 
 #define PWR_PVDLevel_2V2          ((uint32_t)0x00000000)
 #define PWR_PVDLevel_2V3          ((uint32_t)0x00000020)
@@ -77,7 +77,7 @@
   * @}
   */
 
-/** @defgroup Regulator_state_is_STOP_mode 
+/** @defgroup Regulator_state_is_STOP_mode
   * @{
   */
 
@@ -89,19 +89,19 @@
   * @}
   */
 
-/** @defgroup STOP_mode_entry 
+/** @defgroup STOP_mode_entry
   * @{
   */
 
 #define PWR_STOPEntry_WFI         ((uint8_t)0x01)
 #define PWR_STOPEntry_WFE         ((uint8_t)0x02)
 #define IS_PWR_STOP_ENTRY(ENTRY) (((ENTRY) == PWR_STOPEntry_WFI) || ((ENTRY) == PWR_STOPEntry_WFE))
- 
+
 /**
   * @}
   */
 
-/** @defgroup PWR_Flag 
+/** @defgroup PWR_Flag
   * @{
   */
 

@@ -3,12 +3,12 @@
 
 
 /******************************************************************************
-* @file    		 
+* @file
 * @author  		Gary
-* @version 		 
-* @date    		 
-* @brief  		  
-*		   		
+* @version
+* @date
+* @brief
+*
 ******************************************************************************/
 
 
@@ -21,7 +21,7 @@
 /*External  Variables */
 
 extern QueueHandle_t Test_Queue;
-extern QueueHandle_t Usb_Queue;	
+extern QueueHandle_t Usb_Queue;
 
 /****************************************************************************/
 
@@ -72,9 +72,9 @@ extern u8  UartRcvFrameBuffer[MAX_UART_FRAME_LENGTH];
 static bool uart_DMA_finished(void);
 static void UartSendData(msg_head_t *msg_head);
 static bool uart_DMA_finished(void);
-static void MsgSendFromUart(comm_head_t *uart_msg_head,task_id_enum totask);
-static void uart_start_TX_DMA(u32 addr,u32 len);
-static void TestSendData(u8 *buf,u16 len);
+static void MsgSendFromUart(comm_head_t *uart_msg_head, task_id_enum totask);
+static void uart_start_TX_DMA(u32 addr, u32 len);
+static void TestSendData(u8 *buf, u16 len);
 
 /****************************************************************************/
 
@@ -88,5 +88,5 @@ void ReadFromUartRxFifo(u8 *buf, u16 *len)
 
 
 
-	
+
 }

@@ -37,12 +37,12 @@ void SPI_FLASH_Init(void);
 void SPI_FLASH_SectorErase(u32 SectorAddr);
 void SPI_FLASH_BlockErase(u32 SectorAddr);
 void SPI_FLASH_ChipErase(void);
-void SPI_FLASH_PageWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite);
-void SPI_FLASH_BufferWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite);
-void SPI_FLASH_BufferRead(u8* pBuffer, u32 ReadAddr, u16 NumByteToRead);
+void SPI_FLASH_PageWrite(u8 *pBuffer, u32 WriteAddr, u16 NumByteToWrite);
+void SPI_FLASH_BufferWrite(u8 *pBuffer, u32 WriteAddr, u16 NumByteToWrite);
+void SPI_FLASH_BufferRead(u8 *pBuffer, u32 ReadAddr, u16 NumByteToRead);
 u32 SPI_FLASH_ReadID(void);
 void SPI_FLASH_StartReadSequence(u32 ReadAddr);
-void NEW_SPI_FLASH_BufferWrite(u8* pBuffer, u32 WriteAddr, u16 NumByteToWrite);
+void NEW_SPI_FLASH_BufferWrite(u8 *pBuffer, u32 WriteAddr, u16 NumByteToWrite);
 u32 SPI_FLASH_CheckSum(u32 start_addr, u32 length);
 
 

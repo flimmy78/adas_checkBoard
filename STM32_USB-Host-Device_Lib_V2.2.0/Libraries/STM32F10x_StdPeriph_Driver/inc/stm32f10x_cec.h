@@ -4,7 +4,7 @@
   * @author  MCD Application Team
   * @version V3.6.1
   * @date    05-March-2012
-  * @brief   This file contains all the functions prototypes for the CEC firmware 
+  * @brief   This file contains all the functions prototypes for the CEC firmware
   *          library.
   ******************************************************************************
   * @attention
@@ -17,8 +17,8 @@
   *
   *        http://www.st.com/software_license_agreement_liberty_v2
   *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   * See the License for the specific language governing permissions and
   * limitations under the License.
@@ -31,7 +31,7 @@
 #define __STM32F10x_CEC_H
 
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -44,22 +44,21 @@
 /** @addtogroup CEC
   * @{
   */
-  
+
 
 /** @defgroup CEC_Exported_Types
   * @{
   */
-   
-/** 
-  * @brief  CEC Init structure definition  
-  */ 
-typedef struct
-{
-  uint16_t CEC_BitTimingMode; /*!< Configures the CEC Bit Timing Error Mode. 
+
+/**
+  * @brief  CEC Init structure definition
+  */
+typedef struct {
+	uint16_t CEC_BitTimingMode; /*!< Configures the CEC Bit Timing Error Mode.
                                This parameter can be a value of @ref CEC_BitTiming_Mode */
-  uint16_t CEC_BitPeriodMode; /*!< Configures the CEC Bit Period Error Mode. 
+	uint16_t CEC_BitPeriodMode; /*!< Configures the CEC Bit Period Error Mode.
                                This parameter can be a value of @ref CEC_BitPeriod_Mode */
-}CEC_InitTypeDef;
+} CEC_InitTypeDef;
 
 /**
   * @}
@@ -67,36 +66,36 @@ typedef struct
 
 /** @defgroup CEC_Exported_Constants
   * @{
-  */ 
-  
-/** @defgroup CEC_BitTiming_Mode 
+  */
+
+/** @defgroup CEC_BitTiming_Mode
   * @{
-  */ 
+  */
 #define CEC_BitTimingStdMode                    ((uint16_t)0x00) /*!< Bit timing error Standard Mode */
 #define CEC_BitTimingErrFreeMode                CEC_CFGR_BTEM   /*!< Bit timing error Free Mode */
 
 #define IS_CEC_BIT_TIMING_ERROR_MODE(MODE) (((MODE) == CEC_BitTimingStdMode) || \
-                                            ((MODE) == CEC_BitTimingErrFreeMode))
+        ((MODE) == CEC_BitTimingErrFreeMode))
 /**
   * @}
   */
 
-/** @defgroup CEC_BitPeriod_Mode 
+/** @defgroup CEC_BitPeriod_Mode
   * @{
-  */ 
+  */
 #define CEC_BitPeriodStdMode                    ((uint16_t)0x00) /*!< Bit period error Standard Mode */
 #define CEC_BitPeriodFlexibleMode                CEC_CFGR_BPEM   /*!< Bit period error Flexible Mode */
 
 #define IS_CEC_BIT_PERIOD_ERROR_MODE(MODE) (((MODE) == CEC_BitPeriodStdMode) || \
-                                            ((MODE) == CEC_BitPeriodFlexibleMode))
+        ((MODE) == CEC_BitPeriodFlexibleMode))
 /**
   * @}
-  */ 
+  */
 
 
-/** @defgroup CEC_interrupts_definition 
+/** @defgroup CEC_interrupts_definition
   * @{
-  */ 
+  */
 #define CEC_IT_TERR                              CEC_CSR_TERR
 #define CEC_IT_TBTRF                             CEC_CSR_TBTRF
 #define CEC_IT_RERR                              CEC_CSR_RERR
@@ -105,33 +104,33 @@ typedef struct
                            ((IT) == CEC_IT_RERR) || ((IT) == CEC_IT_RBTF))
 /**
   * @}
-  */ 
+  */
 
 
-/** @defgroup CEC_Own_Address 
+/** @defgroup CEC_Own_Address
   * @{
-  */ 
+  */
 #define IS_CEC_ADDRESS(ADDRESS) ((ADDRESS) < 0x10)
 /**
   * @}
-  */ 
+  */
 
-/** @defgroup CEC_Prescaler 
+/** @defgroup CEC_Prescaler
   * @{
-  */ 
+  */
 #define IS_CEC_PRESCALER(PRESCALER) ((PRESCALER) <= 0x3FFF)
 
 /**
   * @}
   */
 
-/** @defgroup CEC_flags_definition 
+/** @defgroup CEC_flags_definition
   * @{
   */
-   
-/** 
-  * @brief  ESR register flags  
-  */ 
+
+/**
+  * @brief  ESR register flags
+  */
 #define CEC_FLAG_BTE                            ((uint32_t)0x10010000)
 #define CEC_FLAG_BPE                            ((uint32_t)0x10020000)
 #define CEC_FLAG_RBTFE                          ((uint32_t)0x10040000)
@@ -140,10 +139,10 @@ typedef struct
 #define CEC_FLAG_LINE                           ((uint32_t)0x10200000)
 #define CEC_FLAG_TBTFE                          ((uint32_t)0x10400000)
 
-/** 
-  * @brief  CSR register flags  
-  */ 
-#define CEC_FLAG_TEOM                           ((uint32_t)0x00000002)  
+/**
+  * @brief  CSR register flags
+  */
+#define CEC_FLAG_TEOM                           ((uint32_t)0x00000002)
 #define CEC_FLAG_TERR                           ((uint32_t)0x00000004)
 #define CEC_FLAG_TBTRF                          ((uint32_t)0x00000008)
 #define CEC_FLAG_RSOM                           ((uint32_t)0x00000010)
@@ -152,7 +151,7 @@ typedef struct
 #define CEC_FLAG_RBTF                           ((uint32_t)0x00000080)
 
 #define IS_CEC_CLEAR_FLAG(FLAG) ((((FLAG) & (uint32_t)0xFFFFFF03) == 0x00) && ((FLAG) != 0x00))
-                               
+
 #define IS_CEC_GET_FLAG(FLAG) (((FLAG) == CEC_FLAG_BTE) || ((FLAG) == CEC_FLAG_BPE) || \
                                ((FLAG) == CEC_FLAG_RBTFE) || ((FLAG)== CEC_FLAG_SBE) || \
                                ((FLAG) == CEC_FLAG_ACKE) || ((FLAG) == CEC_FLAG_LINE) || \
@@ -163,25 +162,25 @@ typedef struct
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup CEC_Exported_Macros
   * @{
   */
- 
+
 /**
   * @}
   */
 
 /** @defgroup CEC_Exported_Functions
   * @{
-  */ 
+  */
 void CEC_DeInit(void);
-void CEC_Init(CEC_InitTypeDef* CEC_InitStruct);
+void CEC_Init(CEC_InitTypeDef *CEC_InitStruct);
 void CEC_Cmd(FunctionalState NewState);
 void CEC_ITConfig(FunctionalState NewState);
 void CEC_OwnAddressConfig(uint8_t CEC_OwnAddress);
@@ -203,14 +202,14 @@ void CEC_ClearITPendingBit(uint16_t CEC_IT);
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-  */ 
+  */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

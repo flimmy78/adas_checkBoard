@@ -4,7 +4,7 @@
   * @author  MCD Application Team
   * @version V1.2.0
   * @date    09-November-2015
-  * @brief   This file is responsible to offer board support package and is 
+  * @brief   This file is responsible to offer board support package and is
   *          configurable by user.
   ******************************************************************************
   * @attention
@@ -17,14 +17,14 @@
   *
   *        http://www.st.com/software_license_agreement_liberty_v2
   *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   * See the License for the specific language governing permissions and
   * limitations under the License.
   *
   ******************************************************************************
-  */ 
+  */
 
 /* Includes ------------------------------------------------------------------*/
 #include "usb_bsp.h"
@@ -37,22 +37,22 @@
 /** @defgroup USB_BSP
 * @brief This file is responsible to offer board support package
 * @{
-*/ 
+*/
 
 /** @defgroup USB_BSP_Private_Defines
 * @{
-*/ 
+*/
 /**
 * @}
-*/ 
+*/
 
 
 /** @defgroup USB_BSP_Private_TypesDefinitions
 * @{
-*/ 
+*/
 /**
 * @}
-*/ 
+*/
 
 
 
@@ -60,29 +60,29 @@
 
 /** @defgroup USB_BSP_Private_Macros
 * @{
-*/ 
+*/
 /**
 * @}
-*/ 
+*/
 
 /** @defgroup USBH_BSP_Private_Variables
 * @{
-*/ 
+*/
 
 /**
 * @}
-*/ 
+*/
 
 /** @defgroup USBH_BSP_Private_FunctionPrototypes
 * @{
-*/ 
+*/
 /**
 * @}
-*/ 
+*/
 
 /** @defgroup USB_BSP_Private_Functions
 * @{
-*/ 
+*/
 
 
 /**
@@ -96,8 +96,8 @@ void USB_OTG_BSP_Init(USB_OTG_CORE_HANDLE *pdev)
 {
 
 
-  RCC_OTGFSCLKConfig(RCC_OTGFSCLKSource_PLLVCO_Div3);
-  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_OTG_FS, ENABLE) ;
+	RCC_OTGFSCLKConfig(RCC_OTGFSCLKSource_PLLVCO_Div3);
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_OTG_FS, ENABLE) ;
 
 
 }
@@ -109,7 +109,7 @@ void USB_OTG_BSP_Init(USB_OTG_CORE_HANDLE *pdev)
 */
 void USB_OTG_BSP_EnableInterrupt(USB_OTG_CORE_HANDLE *pdev)
 {
-		// Move to driver.c
+	// Move to driver.c
 }
 /**
 * @brief  USB_OTG_BSP_uDelay
@@ -117,18 +117,15 @@ void USB_OTG_BSP_EnableInterrupt(USB_OTG_CORE_HANDLE *pdev)
 * @param  usec : Value of delay required in micro sec
 * @retval None
 */
-void USB_OTG_BSP_uDelay (const uint32_t usec)
+void USB_OTG_BSP_uDelay(const uint32_t usec)
 {
-  uint32_t count = 0;
-  const uint32_t utime = (120 * usec / 7);
-  do
-  {
-    if ( ++count > utime )
-    {
-      return ;
-    }
-  }
-  while (1);
+	uint32_t count = 0;
+	const uint32_t utime = (120 * usec / 7);
+	do {
+		if (++count > utime) {
+			return ;
+		}
+	} while (1);
 }
 
 
@@ -138,17 +135,17 @@ void USB_OTG_BSP_uDelay (const uint32_t usec)
 * @param  msec : Value of delay required in milli sec
 * @retval None
 */
-void USB_OTG_BSP_mDelay (const uint32_t msec)
+void USB_OTG_BSP_mDelay(const uint32_t msec)
 {
-  USB_OTG_BSP_uDelay(msec * 1000);   
+	USB_OTG_BSP_uDelay(msec * 1000);
 }
 /**
 * @}
-*/ 
+*/
 
 /**
 * @}
-*/ 
+*/
 
 /**
 * @}

@@ -48,33 +48,33 @@ volatile bool UB913_4_OK = false;
 
 
 /****************************************************************************************
-* Function:... 		I2C basic functions 
-* Parameters:  	 
-* Returns:.... 		 
-* Description: 	 
+* Function:... 		I2C basic functions
+* Parameters:
+* Returns:....
+* Description:
 * Created:.... 		gary
 *
 ****************************************************************************************/
 
 static void i2c_scl_low()
 {
-	GPIO_ResetBits(I2C1_SCL_PORT,I2C1_SCL_PIN);
+	GPIO_ResetBits(I2C1_SCL_PORT, I2C1_SCL_PIN);
 }
 
 static void i2c_scl_high()
 {
-	GPIO_SetBits(I2C1_SCL_PORT,I2C1_SCL_PIN);
+	GPIO_SetBits(I2C1_SCL_PORT, I2C1_SCL_PIN);
 }
 
 
 static void i2c_sda_low()
 {
-	GPIO_ResetBits(I2C1_SDA_PORT,I2C1_SDA_PIN);
+	GPIO_ResetBits(I2C1_SDA_PORT, I2C1_SDA_PIN);
 }
 
 static void i2c_sda_high()
 {
-	GPIO_SetBits(I2C1_SDA_PORT,I2C1_SDA_PIN);
+	GPIO_SetBits(I2C1_SDA_PORT, I2C1_SDA_PIN);
 }
 
 
@@ -82,24 +82,30 @@ static void i2c_sda_high()
 static void i2c_sda_dir_in()
 {
 	//Release SDA
-	GPIO_SetBits(I2C1_SDA_PORT,I2C1_SDA_PIN);
+	GPIO_SetBits(I2C1_SDA_PORT, I2C1_SDA_PIN);
 }
 
 static void i2c_sda_dir_out()
 {
-	//GPIO_SetBits(I2C1_SDA_PORT,I2C1_SDA_PIN);;		// NULL	
+	//GPIO_SetBits(I2C1_SDA_PORT,I2C1_SDA_PIN);;		// NULL
 }
 
 static u8 i2c_sda_value()
 {
-	if (I2C1_SDA_PORT->IDR & I2C1_SDA_PIN) return 1;	//No ack
-	else return 0;		//Ack ok
+	if (I2C1_SDA_PORT->IDR & I2C1_SDA_PIN) {
+		return 1;    //No ack
+	} else {
+		return 0;    //Ack ok
+	}
 }
 
 static u8 i2c_scl_value()
 {
-	if (I2C1_SCL_PORT->IDR & I2C1_SCL_PIN) return 1;
-	else return 0;		
+	if (I2C1_SCL_PORT->IDR & I2C1_SCL_PIN) {
+		return 1;
+	} else {
+		return 0;
+	}
 }
 
 static void i2c_delay1()
@@ -128,7 +134,7 @@ static void init_i2c_dev(void)
 	I2C_UB914.scl_value = i2c_scl_value;
 	I2C_UB914.delay1    = i2c_delay1;
 	I2C_UB914.delay2    = i2c_delay2;
-	I2C_UB914.addr    	 = UB914_ADDR<<1;
+	I2C_UB914.addr    	 = UB914_ADDR << 1;
 	I2C_UB914.clock_stretch    = 1;
 	I2C_UB914.wait_bus_idle = wait_bus_idle;
 
@@ -143,10 +149,10 @@ static void init_i2c_dev(void)
 	I2C_UB913.scl_value = i2c_scl_value;
 	I2C_UB913.delay1	 = i2c_delay1;
 	I2C_UB913.delay2	 = i2c_delay2;
-	I2C_UB913.addr 	 = UB913_ADDR<<1;
+	I2C_UB913.addr 	 = UB913_ADDR << 1;
 	I2C_UB913.clock_stretch	= 1;
 	I2C_UB913.wait_bus_idle = wait_bus_idle;
-	
+
 }
 
 
@@ -158,11 +164,9 @@ static void init_UB914(void)
 
 	//0. Check ID
 	j = 100;
-	while (j--)
-	{
-		soft_i2c_read(&I2C_UB914,UB914_ADDR_REG,buf,1);
-		if (buf[0] == 0xC0)  
-		{
+	while (j--) {
+		soft_i2c_read(&I2C_UB914, UB914_ADDR_REG, buf, 1);
+		if (buf[0] == 0xC0) {
 			TraceStr("UB914 i2c ok\r\n");
 			break;
 		}
@@ -173,53 +177,54 @@ static void init_UB914(void)
 	vTaskDelay(100);
 
 
-	j= 500;
-	while (j--)
-	{
+	j = 500;
+	while (j--) {
 		vTaskDelay(2);
 		clear_watchdog_flag(TASK_ALL);
-		soft_i2c_read(&I2C_UB914,0x06,buf,1);	
-	    if (buf[0] == 0xB0) break;
+		soft_i2c_read(&I2C_UB914, 0x06, buf, 1);
+		if (buf[0] == 0xB0) {
+			break;
+		}
 	}
-	if (j==0) {TraceStr("Ub913 found \r\n");return;}
+	if (j == 0) {
+		TraceStr("Ub913 found \r\n");
+		return;
+	}
 	TraceStr("Ub913 found \r\n");
 
-	
-	//6. Read Ser ID	
-	i |= soft_i2c_read(&I2C_UB914,UB914_SER_ADDR_REG,buf,1);	
-	Trace("UB913 I2C Addr",buf[0]);
+
+	//6. Read Ser ID
+	i |= soft_i2c_read(&I2C_UB914, UB914_SER_ADDR_REG, buf, 1);
+	Trace("UB913 I2C Addr", buf[0]);
 
 	//7. Set Ser Alias ID
-	buf[0] = UB913_ADDR<<1;		
-	soft_i2c_write(&I2C_UB914,UB914_SER_ALIAS_REG,buf,1);
+	buf[0] = UB913_ADDR << 1;
+	soft_i2c_write(&I2C_UB914, UB914_SER_ALIAS_REG, buf, 1);
 
 	vTaskDelay(10);
 
-	
+
 	//8. Config sensor addr
-	buf[0] = SENSOR_ADDR<<1;		
-	soft_i2c_write(&I2C_UB914,UB914_SENSOR_ADDR_REG,buf,1);		
+	buf[0] = SENSOR_ADDR << 1;
+	soft_i2c_write(&I2C_UB914, UB914_SENSOR_ADDR_REG, buf, 1);
 
 	//0x10. Config sensor alias addr
-	buf[0] = SENSOR_ADDR<<1;		
-	soft_i2c_write(&I2C_UB914,UB914_SENSOR_ALIAS_REG,buf,1);		
+	buf[0] = SENSOR_ADDR << 1;
+	soft_i2c_write(&I2C_UB914, UB914_SENSOR_ALIAS_REG, buf, 1);
 
 	//For UB914, All GPIO is input, So default setting is ok
 
 
-	if (i!=0) 
-	{	
-		Trace("UB914 I2c error",i);
+	if (i != 0) {
+		Trace("UB914 I2c error", i);
 		UB913_4_OK = false;
-	}
-	else 
-	{
-		TraceStr("All UB914 i2c is ok\r\n");	
+	} else {
+		TraceStr("All UB914 i2c is ok\r\n");
 		UB913_4_OK = true;
 	}
-	
+
 	//Initialize finished
-	
+
 }
 
 
@@ -227,27 +232,24 @@ static void init_UB914(void)
 static void init_UB913(void)
 {
 	unsigned char buf[2];
-	u8 i=0;
+	u8 i = 0;
 
 
 	//0x11   Config SCL high time
 	buf[0] = 0x18;		//0x82 is 100k
-	i |= soft_i2c_write(&I2C_UB913,UB913_SCL_HIGH_REG,buf,1);		
+	i |= soft_i2c_write(&I2C_UB913, UB913_SCL_HIGH_REG, buf, 1);
 	//0x12  Config SCL low time
-	i |= soft_i2c_write(&I2C_UB913,UB913_SCL_LOW_REG,buf,1);		
+	i |= soft_i2c_write(&I2C_UB913, UB913_SCL_LOW_REG, buf, 1);
 
 
 	// Set GPIO2,3 as uart output
-	buf[0] = 0x55;		 
-	i |= soft_i2c_write(&I2C_UB913,0x0E,buf,1);		
+	buf[0] = 0x55;
+	i |= soft_i2c_write(&I2C_UB913, 0x0E, buf, 1);
 
-	if (i!=0) 
-	{
-		Trace("UB913 I2c error",i);
-		UB913_4_OK = false; 
-	}
-	else 
-	{
+	if (i != 0) {
+		Trace("UB913 I2c error", i);
+		UB913_4_OK = false;
+	} else {
 		TraceStr("All UB913 i2c is ok\r\n");
 		UB913_4_OK = true;
 	}
@@ -277,27 +279,28 @@ void read_ub914_mode(void)
 	u8 buf[2];
 	u32 j;
 
-	while (1)
-	{
-		if ((I2C_UB914.sda_value() == 1) && (I2C_UB914.scl_value() == 1))
-		{
+	while (1) {
+		if ((I2C_UB914.sda_value() == 1) && (I2C_UB914.scl_value() == 1)) {
 			j++;
+		} else {
+			j = 0;
 		}
-		else j=0;
 		drv_delayus(10);
-		if (j==50) break;
+		if (j == 50) {
+			break;
+		}
 	}
 
 
 	buf[0] = 0xff;
-	i |= soft_i2c_read(&I2C_UB914,0x1a,buf,1);	
-	Trace("Read ub914 reg 0x1a",buf[0]);
+	i |= soft_i2c_read(&I2C_UB914, 0x1a, buf, 1);
+	Trace("Read ub914 reg 0x1a", buf[0]);
 
 	buf[0] = 0xff;
-	i |= soft_i2c_read(&I2C_UB914,0x1b,buf,1);	
-	Trace("Read ub914 reg 0x1b",buf[0]);
+	i |= soft_i2c_read(&I2C_UB914, 0x1b, buf, 1);
+	Trace("Read ub914 reg 0x1b", buf[0]);
 
-	
+
 }
 
 
@@ -306,21 +309,24 @@ void read_ub914_mode(void)
 
 static u8 wait_bus_idle(void)
 {
-	u32 i,j;
+	u32 i, j;
 
 	i = 0;
 	j = 0;
-	while (1)
-	{
-		if ((I2C_UB914.sda_value() == 1) && (I2C_UB914.scl_value() == 1))
-		{
+	while (1) {
+		if ((I2C_UB914.sda_value() == 1) && (I2C_UB914.scl_value() == 1)) {
 			j++;
+		} else {
+			j = 0;
 		}
-		else j=0;
 		drv_delayus(1);
 		i++;
-		if (j==500) break;
-		if (i>20000) return 0;
+		if (j == 500) {
+			break;
+		}
+		if (i > 20000) {
+			return 0;
+		}
 	}
 	return 1;
 
@@ -336,15 +342,18 @@ u8 check_ub913(void)
 	u8 buf[2];
 
 	//Check bus is busy ?
-	if (wait_bus_idle())
-	{
-		soft_i2c_read(&I2C_UB914,0x1c,buf,1);	
-		Trace("UB914 0x1c",buf[0]);
+	if (wait_bus_idle()) {
+		soft_i2c_read(&I2C_UB914, 0x1c, buf, 1);
+		Trace("UB914 0x1c", buf[0]);
 
-		if (buf[0] == 0x13) return 1;
-		else return 0;
+		if (buf[0] == 0x13) {
+			return 1;
+		} else {
+			return 0;
+		}
+	} else {
+		return 0;
 	}
-	else return 0;
 }
 
 

@@ -4,7 +4,7 @@
   * @author  MCD Application Team
   * @version V3.6.1
   * @date    05-March-2012
-  * @brief   This file contains all the functions prototypes for the BKP firmware 
+  * @brief   This file contains all the functions prototypes for the BKP firmware
   *          library.
   ******************************************************************************
   * @attention
@@ -17,8 +17,8 @@
   *
   *        http://www.st.com/software_license_agreement_liberty_v2
   *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   * See the License for the specific language governing permissions and
   * limitations under the License.
@@ -31,7 +31,7 @@
 #define __STM32F10x_BKP_H
 
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -57,7 +57,7 @@
   * @{
   */
 
-/** @defgroup Tamper_Pin_active_level 
+/** @defgroup Tamper_Pin_active_level
   * @{
   */
 
@@ -69,7 +69,7 @@
   * @}
   */
 
-/** @defgroup RTC_output_source_to_output_on_the_Tamper_pin 
+/** @defgroup RTC_output_source_to_output_on_the_Tamper_pin
   * @{
   */
 
@@ -78,14 +78,14 @@
 #define BKP_RTCOutputSource_Alarm         ((uint16_t)0x0100)
 #define BKP_RTCOutputSource_Second        ((uint16_t)0x0300)
 #define IS_BKP_RTC_OUTPUT_SOURCE(SOURCE) (((SOURCE) == BKP_RTCOutputSource_None) || \
-                                          ((SOURCE) == BKP_RTCOutputSource_CalibClock) || \
-                                          ((SOURCE) == BKP_RTCOutputSource_Alarm) || \
-                                          ((SOURCE) == BKP_RTCOutputSource_Second))
+        ((SOURCE) == BKP_RTCOutputSource_CalibClock) || \
+        ((SOURCE) == BKP_RTCOutputSource_Alarm) || \
+        ((SOURCE) == BKP_RTCOutputSource_Second))
 /**
   * @}
   */
 
-/** @defgroup Data_Backup_Register 
+/** @defgroup Data_Backup_Register
   * @{
   */
 

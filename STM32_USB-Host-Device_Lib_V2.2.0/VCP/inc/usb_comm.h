@@ -28,7 +28,7 @@
 #define 	TMP_FRAME_BUFF_SIZE			64
 
 #define 	APP_RX_DATA_SIZE			(1024 *5)
-#define 	APP_TX_DATA_SIZE			(2048) 		 
+#define 	APP_TX_DATA_SIZE			(2048)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 

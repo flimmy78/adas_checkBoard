@@ -4,7 +4,7 @@
   * @author  MCD Application Team
   * @version V3.6.1
   * @date    05-March-2012
-  * @brief   This file contains all the functions prototypes for the DBGMCU 
+  * @brief   This file contains all the functions prototypes for the DBGMCU
   *          firmware library.
   ******************************************************************************
   * @attention
@@ -17,8 +17,8 @@
   *
   *        http://www.st.com/software_license_agreement_liberty_v2
   *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   * See the License for the specific language governing permissions and
   * limitations under the License.
@@ -31,7 +31,7 @@
 #define __STM32F10x_DBGMCU_H
 
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -83,11 +83,11 @@
 #define DBGMCU_TIM9_STOP             ((uint32_t)0x10000000)
 #define DBGMCU_TIM10_STOP            ((uint32_t)0x20000000)
 #define DBGMCU_TIM11_STOP            ((uint32_t)0x40000000)
-                                              
+
 #define IS_DBGMCU_PERIPH(PERIPH) ((((PERIPH) & 0x800000F8) == 0x00) && ((PERIPH) != 0x00))
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup DBGMCU_Exported_Macros
   * @{

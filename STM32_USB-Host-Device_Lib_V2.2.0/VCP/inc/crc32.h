@@ -1,2 +1,2 @@
-unsigned int GetCrc32(unsigned char  *buf,unsigned int len);
+unsigned int GetCrc32(unsigned char  *buf, unsigned int len);
 

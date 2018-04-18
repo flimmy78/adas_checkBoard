@@ -115,8 +115,7 @@
 
 
 
-typedef struct 				//16 bytes
-{
+typedef struct {			//16 bytes
 	u32 start_bytes;
 	u16 msg_len;
 	u8  msg_count;
@@ -125,18 +124,16 @@ typedef struct 				//16 bytes
 	u8  service_type;
 	u8  msg_type;
 	u32 crc32;
-}comm_head_t;
+} comm_head_t;
 
 
-typedef struct
-{
+typedef struct {
 	u16 Type;
 	u16 Len;
 	u8  *buf;
-}tlv_type_t;
+} tlv_type_t;
 
-typedef struct
-{
+typedef struct {
 	u32 ReplyType;
 	u32 CpuID0;
 	u32 CpuID1;
@@ -150,23 +147,22 @@ typedef struct
 	u16 Volatage2;
 	u16 Volatage3;
 	u16 Volatage4;
-	u16 Volatage5;	
+	u16 Volatage5;
 	u16 Volatage6;
 	u16 Volatage7;
 	u16 Volatage8;
 	u16 Current0;
 	u16 Current1;
 	u8  Mode;
-}tlv_reply_t;
+} tlv_reply_t;
 
-typedef struct
-{
+typedef struct {
 	u16 type;
 	u16 len;
 	u16 test_result;
 	u32 fpga_ver;
 	u8  cpuid[12];
-}tlv_test_t;
+} tlv_test_t;
 
 
 #define 	COMM_HEADER_LENGTH		sizeof(comm_head_t)

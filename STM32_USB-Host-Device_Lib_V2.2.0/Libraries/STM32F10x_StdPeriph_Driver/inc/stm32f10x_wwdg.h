@@ -17,8 +17,8 @@
   *
   *        http://www.st.com/software_license_agreement_liberty_v2
   *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   * See the License for the specific language governing permissions and
   * limitations under the License.
@@ -31,7 +31,7 @@
 #define __STM32F10x_WWDG_H
 
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -43,24 +43,24 @@
 
 /** @addtogroup WWDG
   * @{
-  */ 
+  */
 
 /** @defgroup WWDG_Exported_Types
   * @{
-  */ 
-  
+  */
+
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup WWDG_Exported_Constants
   * @{
-  */ 
-  
-/** @defgroup WWDG_Prescaler 
+  */
+
+/** @defgroup WWDG_Prescaler
   * @{
-  */ 
-  
+  */
+
 #define WWDG_Prescaler_1    ((uint32_t)0x00000000)
 #define WWDG_Prescaler_2    ((uint32_t)0x00000080)
 #define WWDG_Prescaler_4    ((uint32_t)0x00000100)
@@ -74,23 +74,23 @@
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup WWDG_Exported_Macros
   * @{
-  */ 
+  */
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup WWDG_Exported_Functions
   * @{
-  */ 
-  
+  */
+
 void WWDG_DeInit(void);
 void WWDG_SetPrescaler(uint32_t WWDG_Prescaler);
 void WWDG_SetWindowValue(uint8_t WindowValue);
@@ -108,14 +108,14 @@ void WWDG_ClearFlag(void);
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-  */ 
+  */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
