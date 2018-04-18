@@ -1,4 +1,7 @@
+# 此为注释 – 将被 Git 忽略
+#/STM32_USB-Host-Device_Lib_V2.2.0/VCP/Object/
 *.bin
 *.o
 *.d
 *.crf
+*.htm
