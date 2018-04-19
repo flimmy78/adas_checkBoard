@@ -18,21 +18,27 @@ void Trace(char *buf, u32 dat);
 void TraceStr_str(char *buf);
 void TraceHex(char *buf, u16 len);
 
+
+
 #define DEBUG_TRACE_STR
+
+		//		char aaa[512]={0}; \
+		//	sprintf(aaa,"File:%s,LINE:%d,%s,",__FILE__,__LINE__,x);\
+		//	TraceStr_str(aaa); \
+
+
 
 #ifdef DEBUG_TRACE_STR
 	#define TraceStr(x) \
 		do{\
-			char aaa[1024]={0}; \
-			sprintf(aaa,"File:%s,LINE:%d,%s,",__FILE__,__LINE__,x);\
-			TraceStr_str(aaa); \
+			char aaa[10]={0};\
+			sprintf(aaa,"F:%s,L:%d,",__FILE__,__LINE__);\
+			TraceStr_str(aaa);\
+			TraceStr_str(x);\
 		}while(0);
 #else
 	TraceStr(x) TraceStr_str(x);
 #endif
-
-
-
 
 
 #define  	MIN_MALLOC_SIZE					32

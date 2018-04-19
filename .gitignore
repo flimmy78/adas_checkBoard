@@ -8,7 +8,12 @@
 *.dep
 *.axf
 *.uvoptx
+*.uvprojx
 *.TMP
 *.hex
+*.THINK
+*.map
+!*.c
+!*.h
 
 

@@ -301,7 +301,7 @@ void can_send(void)
 		}
 		//	CAN_Transmit(CAN1,&TxMessage);
 		if (CAN_Transmit(CAN2, &TxMessage) == CAN_TxStatus_NoMailBox) {
-			TraceStr("*");
+			//TraceStr("*");
 		}
 		vTaskDelay(5);
 	}
@@ -320,7 +320,7 @@ void can_send(void)
 		}
 		//	CAN_Transmit(CAN1,&TxMessage);
 		if (CAN_Transmit(CAN2, &TxMessage) == CAN_TxStatus_NoMailBox) {
-			TraceStr("*");
+			//TraceStr("*");
 		}
 		vTaskDelay(5);
 	}

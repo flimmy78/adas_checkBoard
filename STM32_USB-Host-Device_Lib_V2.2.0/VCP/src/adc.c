@@ -174,7 +174,7 @@ void ReadADC(void)
 		m = adc * 3.3 / 4096 * ratio[i] * 329 / 330;
 		//m1 = adc * 3.3 /4096 * 329 / 330;
 		//sprintf(strbuf,"adc value: %d voltage1 : %f ,voltage2: %f \r\n",adc,m1,m);
-		TraceStr(strbuf);
+		//TraceStr(strbuf);
 		MeasPara.Voltage[i] = m * 100;
 
 	}

@@ -314,11 +314,7 @@ void ReadINA226(void)
 	}
 
 	MeasPara.Power = (MeasPara.WorkCurrent * MeasPara.BusVoltage) / 10000;				// mW
-
 	//sprintf(strbuf,"%4dv, current: %4d,power=%4d\r\n",MeasPara.BusVoltage,MeasPara.WorkCurrent,MeasPara.Power);
-
-	TraceStr(strbuf);
-
-
+	//TraceStr(strbuf);
 }
 
