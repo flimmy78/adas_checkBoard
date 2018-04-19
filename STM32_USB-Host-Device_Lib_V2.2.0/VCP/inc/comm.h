@@ -1,3 +1,5 @@
+#ifndef __COMM_H_
+#define __COMM_H_
 // Service type
 #define 	SERVICE_TYPE_FILE			0x01
 #define 	SERVICE_TYPE_CMD			0x02
@@ -168,3 +170,4 @@ typedef struct {
 #define 	COMM_HEADER_LENGTH		sizeof(comm_head_t)
 #define 	TLV_REPLY_LENGTH		sizeof(tlv_reply_t)
 
+#endif

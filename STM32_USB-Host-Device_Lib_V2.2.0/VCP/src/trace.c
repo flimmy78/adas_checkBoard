@@ -89,13 +89,8 @@ void Trace(char *buf, u32 dat)
 
 }
 
-
-
-
-
-void TraceStr(char *buf)
+void TraceStr_str(char *buf)
 {
-
 	u32 i;
 	char *p;
 	if (trace_dma_start) while (!trace_DMA_finished()) ;
@@ -114,10 +109,6 @@ void TraceStr(char *buf)
 	trace_start_TX_DMA((u32)&trace_dma_buffer, i);
 
 }
-
-
-
-
 
 static bool IsAscii(u8 ch)
 {

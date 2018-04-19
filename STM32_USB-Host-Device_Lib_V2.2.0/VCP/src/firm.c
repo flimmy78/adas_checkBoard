@@ -3,7 +3,6 @@
 #define 	ACK			0x79
 #define 	NACK		0x1F
 
-
 #define 	CMD_GET					0x00
 #define		CMD_GET_VER 			0x01
 #define 	CMD_GET_ID				0x02
@@ -17,17 +16,11 @@
 #define 	CMD_READ_PROTECT		0x82
 #define 	CMD_READ_UNPROTECT		0x92
 
-
-
 /****************************************************************************/
 
 #define 	RAM_START_ADDR			0x20002000
 #define 	TEST_CODE_START_ADDR	0x14000
 #define 	TEST_CODE_LENGTH		(48*1024)
-
-
-
-
 
 
 /****************************************************************************/
@@ -38,8 +31,6 @@ extern volatile bool g_check_uart_comm_msg_flag;
 
 extern void MsgSendFromTest1(comm_head_t *test_msg_head, task_id_enum totask);
 /****************************************************************************/
-
-
 
 
 /****************************************************************************/
@@ -76,8 +67,6 @@ static bool FirmWaitAck(u16 before, u16 after);
 static bool FirmDownload(void);
 static bool FirmCmdRead(u32 addr, u16 len);
 /****************************************************************************/
-
-
 static void FirmStart(void)
 {
 	//unsigned char tt = 'A';
@@ -127,7 +116,6 @@ static bool FirmCmdErase(void)
 	return true;
 }
 
-
 static bool FirmCmdErase_V3_0(void)
 {
 
@@ -171,8 +159,6 @@ static bool FirmCheckCodeNeedErase()
 
 }
 
-
-
 static bool FirmCmdRead(u32 addr, u16 len)
 {
 	u32 i;
@@ -213,11 +199,6 @@ static bool FirmCmdRead(u32 addr, u16 len)
 
 }
 
-
-
-
-
-
 bool FirmCmdGo(u32 addr)
 {
 
@@ -242,7 +223,6 @@ bool FirmCmdGo(u32 addr)
 
 	return true;
 }
-
 
 bool FirmCmdWrite(u8 *buf, u32 addr, u16 len)
 {
@@ -301,8 +281,6 @@ bool FirmCmdEnableRP(void)
 	return true;
 }
 
-
-
 bool FirmCmdCheckRP()
 {
 	u32 addr = 0x20000000;
@@ -339,7 +317,6 @@ bool FirmCmdCheckRP()
 	return false;
 }
 
-
 bool FirmCmdDisableRP()
 {
 	// Send Cmd
@@ -358,11 +335,7 @@ bool FirmCmdDisableRP()
 	TraceStr("remove rp cmd complete\r\n");
 	return true;
 }
-
-
-
-#define			bootloader_version		V_3_0
-
+#define bootloader_version		V_3_0
 
 bool FirmTest(void)
 {
@@ -370,7 +343,6 @@ bool FirmTest(void)
 	//drv_comm_uart_init();
 
 	ReinitFIFO(&UartRxFifo);
-
 
 	TraceStr("FirmTest \r\n");
 	FirmStart();                                          //CMD : start(0x7f)
@@ -380,52 +352,6 @@ bool FirmTest(void)
 	} else {
 		TraceStr("FirmStart success\r\n");
 	}
-	/*
-	vTaskDelay(100);
-	TraceStr("Start FirmCmdGetVer \r\n");
-	FirmCmdGetVer();                                     //CMD : Get  Version(0x01)
-	if (FirmWaitAck(200,10)==false)
-	{
-		TraceStr("FirmCmdGetVer failed\r\n");
-		return false;
-	}
-	*/
-
-
-	//vTaskDelay(100);
-	/*
-	TraceStr("Start FirmCmdCheckRP \r\n");
-	if (FirmCmdCheckRP())                                //CMD : READ(0x11)
-	{
-		//vTaskDelay(100);
-		TraceStr("Detect read protect\r\n");
-		TraceStr("Now removed it \r\n");
-
-		TraceStr("Start FirmCmdDisableRP \r\n");
-		if(!FirmCmdDisableRP())                              //CMD : CMD_READ_UNPROTECT(0x92)
-		{
-			TraceStr("Readout Unprotect failed\r\n");
-			return false;
-		}
-		else
-			TraceStr("Readout Unprotect success , firm start\r\n");
-
-		//vTaskDelay(100);
-		//Now, system is reset, we sync baudrate
-		//FirmStart();                                       //CMD : start(0x7f)
-		//if (FirmWaitAck(0,10)==false)
-		//{
-			//TraceStr("FirmStart failed\r\n");
-			//return false;
-		//}
-	}
-	else
-		TraceStr("No rp\r\n");
-	*/
-
-	//Need erase ?
-
-	//vTaskDelay(2000);
 
 #ifdef  bootloader_version
 	TraceStr("Start FirmCheckCodeNeedErase V 3.0\r\n");
@@ -468,8 +394,6 @@ bool FirmTest(void)
 	}
 	return true;
 #endif
-
-
 	//TraceStr("write memory start \r\n");
 	//FirmDownload();   //请求下载文件
 	/*
@@ -485,8 +409,6 @@ bool FirmTest(void)
 		return false;
 	}*/
 }
-
-
 
 bool FirmReady(void)
 {
@@ -505,26 +427,6 @@ bool FirmReady(void)
 	}
 	return true;
 }
-
-
-
-
-
-
-
-
-#if 0
-static bool FirmWaitAck(void)
-{
-	u32 i;
-	u16 len;
-	len = RcvFirmFrameFromUart(&UartRxFifo, CommBuf);
-	for (i = 0; i < len; i++) {
-		sprintf((char *)&UartRcvFrameBuffer[i * 3], "%02x ", CommBuf[i]);
-	}
-	TraceStr(UartRcvFrameBuffer);
-}
-#else
 
 static bool FirmWaitAck(u16 before, u16 after)
 {
@@ -564,13 +466,9 @@ static bool FirmWaitAck(u16 before, u16 after)
 		Trace("ack value", CommBuf[0]);
 		return false;
 	}
-
 }
-#endif
 
 //unsigned char MCUCodeBuf[1024];
-
-
 static bool FirmDownload(void)
 {
 	u32 baseaddr = RAM_START_ADDR;
@@ -630,14 +528,6 @@ static bool FirmDownload(void)
 	*/
 	return true;
 }
-
-
-
-
-
-
-
-
 
 
 

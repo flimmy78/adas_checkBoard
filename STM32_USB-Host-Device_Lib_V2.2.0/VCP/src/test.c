@@ -436,7 +436,6 @@ static bool TestWriteFile(comm_head_t *msg_head)
 
 static bool TestStartTest(void)
 {
-
 	bool ret; unsigned int sum; int i = 0;
 	TraceStr("TestStartTest 0\r\n");
 	drv_boot_low();
@@ -761,7 +760,6 @@ static void TestServiceCmd(comm_head_t *msg_head)
 		//TraceStr("TestServiceCmd MSG_TYPE_CMD_SWITCH_SCREEN_REQ \r\n");
 		TestSwitchScreen();
 		break;
-
 	case MSG_TYPE_CMD_BOOT_IN_IAP_MODE_REQ:
 		TraceStr("TestServiceCmd MSG_TYPE_CMD_BOOT_IN_IAP_MODE_REQ \r\n");
 		can_send_flag = false;
@@ -1322,8 +1320,6 @@ void test_task(void *taskparam)
 
 	init_INA226_normal();
 	InitADC();
-
-
 	/* Main loop */
 	while (1) {
 		//TraceStr(" test task!\r\n");
@@ -2689,17 +2685,12 @@ bool WIFI_TestBoard_Power()
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 
-
-
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOE, ENABLE);
 	GPIO_InitStructure.GPIO_Pin = wifi_ctl_power_PIN | wifi_ctl_TestBoard_sop1_PIN |
 	                              wifi_ctl_TestBoard_RST_PIN;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(wifi_ctl_PORT, &GPIO_InitStructure);
-
-
-
 
 	//power off
 	//GPIO_ResetBits(wifi_ctl_PORT,wifi_ctl_power_PIN);
@@ -2737,8 +2728,6 @@ bool WIFI_TestBoard_Reset()
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(wifi_ctl_PORT, &GPIO_InitStructure);
-
-
 
 
 	//power on
