@@ -2977,11 +2977,11 @@ bool FS_Programming(u8 *msg_data)
 		GPIO_ResetBits(wifi_ctl_PORT, wifi_ctl_Product_RST_PIN);
 		vTaskDelay(10);
 		GPIO_SetBits(wifi_ctl_PORT, wifi_ctl_Product_RST_PIN);
-		vTaskDelay(1000);
+		vTaskDelay(500);
 
 
 		GPIO_ResetBits(wifi_ctl_PORT, wifi_ctl_power_PIN);
-		vTaskDelay(2000);
+		vTaskDelay(1000);
 		GPIO_SetBits(wifi_ctl_PORT, wifi_ctl_power_PIN);
 		vTaskDelay(1000);
 	}
