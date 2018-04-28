@@ -152,14 +152,13 @@ static void init_ADC_DMA(void)
 	DMA_Cmd(DMA1_Channel1, ENABLE);
 }
 
-
-
-char strbuf[128];
+char strbuf[128]={0};
 void ReadADC(void)
 {
 	u32 i, j;
 	float m;
 	u16 adc;
+
 	//DMA_Cmd(DMA1_Channel1, DISABLE);
 	//ADC_DMACmd(ADC1, DISABLE);
 	//ADC_SoftwareStartConvCmd(ADC1, DISABLE);
@@ -174,7 +173,7 @@ void ReadADC(void)
 		m = adc * 3.3 / 4096 * ratio[i] * 329 / 330;
 		//m1 = adc * 3.3 /4096 * 329 / 330;
 		//sprintf(strbuf,"adc value: %d voltage1 : %f ,voltage2: %f \r\n",adc,m1,m);
-		TraceStr(strbuf);
+		//TraceStr(strbuf);
 		MeasPara.Voltage[i] = m * 100;
 
 	}
