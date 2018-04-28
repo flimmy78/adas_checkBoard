@@ -20,13 +20,7 @@ void TraceHex(char *buf, u16 len);
 
 
 
-#define DEBUG_TRACE_STR
-
-		//		char aaa[512]={0}; \
-		//	sprintf(aaa,"File:%s,LINE:%d,%s,",__FILE__,__LINE__,x);\
-		//	TraceStr_str(aaa); \
-
-
+//#define DEBUG_TRACE_STR
 
 #ifdef DEBUG_TRACE_STR
 	#define TraceStr(x) \
@@ -37,7 +31,7 @@ void TraceHex(char *buf, u16 len);
 			TraceStr_str(x);\
 		}while(0);
 #else
-	TraceStr(x) TraceStr_str(x);
+	#define TraceStr(x) TraceStr_str(x)
 #endif
 
 
