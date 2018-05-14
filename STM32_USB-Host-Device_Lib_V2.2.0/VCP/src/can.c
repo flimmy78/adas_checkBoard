@@ -253,9 +253,6 @@ void CAN2_Config(can_para_t *can_para)
 
 	CAN_InitStructure.CAN_Prescaler = (36000000 / can_para->baudrate /
 	                                   can_prescaler);
-
-
-
 	CAN_Init(CAN2, &CAN_InitStructure);
 
 	/* No filter */
@@ -286,29 +283,28 @@ void can_send(void)
 	CanTxMsg TxMessage;
 	u32 i, j;
 	j = 10;
-
-	CAN1_Config(&can_para_500k);
+#if 1
 	CAN2_Config(&can_para_500k);
-	vTaskDelay(10);
+	vTaskDelay(100);
 	j = 10;
-	while (j--) {
-		TxMessage.StdId = 0x378;
-		TxMessage.RTR = CAN_RTR_DATA;
-		TxMessage.IDE = CAN_ID_STD;
-		TxMessage.DLC = 8;
-		for (i = 0; i < 8; i++) {
-			TxMessage.Data[i] = 0xFF;
-		}
-		//	CAN_Transmit(CAN1,&TxMessage);
-		if (CAN_Transmit(CAN2, &TxMessage) == CAN_TxStatus_NoMailBox) {
-			//TraceStr("*");
-		}
-		vTaskDelay(5);
-	}
-
-	CAN1_Config(&can_para_100k);
+	//TraceStr("500k\n");
+//	while (j--) {
+//		TxMessage.StdId = 0x378;
+//		TxMessage.RTR = CAN_RTR_DATA;
+//		TxMessage.IDE = CAN_ID_STD;
+//		TxMessage.DLC = 8;
+//		for (i = 0; i < 8; i++) {
+//			TxMessage.Data[i] = 0xFF;
+//		}
+//		//	CAN_Transmit(CAN1,&TxMessage);
+//		if (CAN_Transmit(CAN2, &TxMessage) == CAN_TxStatus_NoMailBox) {
+//			//TraceStr("*");
+//		}
+//		vTaskDelay(50);
+//	}
+#else
 	CAN2_Config(&can_para_100k);
-	vTaskDelay(10);
+	vTaskDelay(100);
 	j = 10;
 	while (j--) {
 		TxMessage.StdId = 0x378;
@@ -322,12 +318,9 @@ void can_send(void)
 		if (CAN_Transmit(CAN2, &TxMessage) == CAN_TxStatus_NoMailBox) {
 			//TraceStr("*");
 		}
-		vTaskDelay(5);
+		vTaskDelay(50);
 	}
-
-
-
-
+#endif
 }
 
 

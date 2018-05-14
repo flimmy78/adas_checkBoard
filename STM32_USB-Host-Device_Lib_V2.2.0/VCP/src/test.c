@@ -290,8 +290,6 @@ static bool WriteDeviceFileReply(u8 MSG_TYPE, comm_head_t *msg_head,
 	return true;
 }
 
-extern u8 strbuf[];
-
 
 static bool writeFileToMCUack()
 {
@@ -400,6 +398,7 @@ static bool WriteDeviceFileToMCU(comm_head_t *msg_head)
 static bool TestWriteFile(comm_head_t *msg_head)
 {
 	static u32 TotalCount = 0;
+	u8 strbuf[64]={0};
 	// In firm mode
 	u32 start;
 	u8 *p;
@@ -509,7 +508,6 @@ static void TestCmdReply(bool status, u8 msg_type, u8 Error_OK_Flag)
 	void *msg_addr = NULL;
 	u32 malloc_size;
 
-
 	/*1. Malloc memory */
 	malloc_size = CALC_MALLOC_SIZE(sizeof(comm_head_t));
 	msg_addr = pvPortMalloc(malloc_size);
@@ -519,7 +517,6 @@ static void TestCmdReply(bool status, u8 msg_type, u8 Error_OK_Flag)
 		return ;
 	}
 	comm_head = (comm_head_t *)msg_addr;
-
 
 	comm_head->start_bytes = 0xAAAAAAAA;
 	comm_head->msg_len = 16;
@@ -1035,16 +1032,18 @@ static void TestServiceCmd(comm_head_t *msg_head)
 
 	case MSG_TYPE_CMD_CAN_SENSOR_TEST_REQ:
 		can_sensor_flag = 0;
-		for (i = 0 ; i < 4; i++) {
+		TraceStr("\nCAN SENSOR testStart------\n");
+
+		for (i = 0 ; i <= 10; i++) {
 			if (can_sensor_flag == 1) {
-				TraceStr("CAN SENSOR OK");
+				TraceStr("CAN SENSOR OK===\n");
 				TestCmdReply(true, MSG_TYPE_CMD_CAN_SENSOR_TEST_REQ, ACK_RUN_OK);
 				break;
 			}
 			vTaskDelay(1000);
 		}
-		if (i == 4) {
-			TraceStr("CAN SENSOR IS NOT OK");
+		if (i > 10 && can_sensor_flag==0) {
+			TraceStr("CAN SENSOR IS NOT OK===\n");
 			TestCmdReply(true, MSG_TYPE_CMD_CAN_SENSOR_TEST_REQ, ACK_RUN_ERROR);
 		}
 		break;
@@ -1244,7 +1243,7 @@ static void TestReplyFunc(void)
 	tlv_reply->Volatage4 = MeasPara.Voltage[4];		//1.8V
 	tlv_reply->Volatage5 = MeasPara.Voltage[5];		//1.2V
 	tlv_reply->Volatage6 = MeasPara.Voltage[6];		//IN_POERR
-	tlv_reply->Volatage7 = MeasPara.Voltage[7];		//IN_POERR
+	tlv_reply->Volatage7 = MeasPara.Voltage[7];		//1.1V
 	tlv_reply->Volatage8 = MeasPara.Voltage[8];		//IN_POERR
 	curMode = GetTestStage();
 	switch (curMode) {

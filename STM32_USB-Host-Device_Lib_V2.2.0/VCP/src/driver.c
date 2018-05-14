@@ -124,8 +124,8 @@ static void Init_GPIO(void)
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(POWER_PORT, &GPIO_InitStructure);
-
-	GPIO_ResetBits(POWER_PORT, POWER_PIN);
+	GPIO_SetBits(POWER_PORT,POWER_PIN);
+	//GPIO_ResetBits(POWER_PORT, POWER_PIN);
 
 	/* Configure the BOOT pin */
 	GPIO_InitStructure.GPIO_Pin = BOOT_PIN;

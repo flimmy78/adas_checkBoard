@@ -96,6 +96,14 @@ can_para_t can_para_500k, can_para_100k;
 
 /****************************************************************************/
 
+
+int fputc(int ch, FILE *F)
+{
+     USART_SendData(USART1,(u8)ch);
+	   while(USART_GetFlagStatus(USART1, USART_FLAG_TXE)== RESET);
+	   return ch;
+}
+
 static void InitVar(void)
 {
 	InitUsbVar();
@@ -134,7 +142,7 @@ int main(void)
 	          &USR_cb);
 	SystemCoreClockUpdate();
 
-	TraceStr("system startup... \r\n");
+	TraceStr("system startup...\r\n");
 
 	xTaskCreate(test_task, 	"test task",	configMINIMAL_STACK_SIZE, NULL,
 	            TEST_TASK_PRIO, NULL);

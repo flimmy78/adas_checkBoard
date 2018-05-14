@@ -9,8 +9,8 @@
 Measurement_Para_t MeasPara;
 
 
-float ratio[9] = {1.1, RANK2_RATIO, RANK3_RATIO, 1.05, 1.05, 2.05, 2.52, 2.04, 1.86};
-
+//float ratio[9] = {1.1, RANK2_RATIO, RANK3_RATIO, 1.05, 1.05, 2.05, 2.52, 2.04, 1.86};
+float ratio[9] = {1.1, RANK2_RATIO, RANK3_RATIO, 1.05, 1.05, 2.05, 1.1, 1.1, 1.86};
 
 
 __ALIGN_BEGIN  static u16 ADCConvertedValue[TOTAL_ADC_NUM * ADC_AGV_NUM]
@@ -28,7 +28,7 @@ static void InitADCGPIO(void)
 	/* Configure the GPIO_LED pin */
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;     //3.3V
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_10MHz;
+	//GPIO_InitStructure.GPIO_Speed = GPIO_Speed_10MHz;
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
 
 
@@ -93,28 +93,26 @@ void InitADC(void)
 
 
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_10, 1,
-	                         ADC_SampleTime_71Cycles5);	// PC0, mcu 3.3v,         3.3V
+	                         ADC_SampleTime_239Cycles5);	// PC0, mcu 3.3v,         3.3V
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_11, 2,
-	                         ADC_SampleTime_71Cycles5);	// PC1, mb 5v             12V
+	                         ADC_SampleTime_239Cycles5);	// PC1, mb 5v             12V
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_12, 3,
-	                         ADC_SampleTime_71Cycles5);	// PC2,  5V               5V
+	                         ADC_SampleTime_239Cycles5);	// PC2,  5V               5V
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_13, 4,
-	                         ADC_SampleTime_71Cycles5);	// PC3, 3.3V              2.5V
+	                         ADC_SampleTime_239Cycles5);	// PC3, 3.3V              2.5V
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_1, 5,
-	                         ADC_SampleTime_71Cycles5);		// PA1, 2.5v              1.8V
+	                         ADC_SampleTime_239Cycles5);		// PA1, 2.5v              1.8V
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_14, 6,
-	                         ADC_SampleTime_71Cycles5);	// PC4, 5v                1.2V
+	                         ADC_SampleTime_239Cycles5);	// PC4, 5v                1.2V
 
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_15, 7,
-	                         ADC_SampleTime_1Cycles5);  //PC5  IN_POWER1   ADC_SampleTime_41Cycles5
+	                         ADC_SampleTime_239Cycles5);  //PC5  IN_POWER1   ADC_SampleTime_41Cycles5
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_8, 8,
-	                         ADC_SampleTime_1Cycles5);		//PB0  IN_POWER1
+	                         ADC_SampleTime_239Cycles5);		//PB0  IN_POWER1
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 9,
-	                         ADC_SampleTime_1Cycles5);		//PB1  IN_POWER1
+	                         ADC_SampleTime_239Cycles5);		//PB1  IN_POWER1
 
-	//ADC_RegularChannelConfig(ADC1, ADC_Channel_15, 7, ADC_SampleTime_41Cycles5);	// PC5
-
-
+	//ADC_RegularChannelConfig(ADC1, ADC_Channel_15, 7, ADC_SampleTime_239Cycles5);	// PC5
 
 
 	ADC_DMACmd(ADC1, ENABLE);
@@ -126,8 +124,6 @@ void InitADC(void)
 	ADC_SoftwareStartConvCmd(ADC1, ENABLE);
 
 }
-
-
 
 static void init_ADC_DMA(void)
 {
@@ -152,30 +148,27 @@ static void init_ADC_DMA(void)
 	DMA_Cmd(DMA1_Channel1, ENABLE);
 }
 
-char strbuf[128]={0};
 void ReadADC(void)
 {
 	u32 i, j;
-	float m;
-	u16 adc;
-
+	float m,m1;
+	u32 adc,totalAdc;
+	char strbuf[128]={0};
 	//DMA_Cmd(DMA1_Channel1, DISABLE);
 	//ADC_DMACmd(ADC1, DISABLE);
 	//ADC_SoftwareStartConvCmd(ADC1, DISABLE);
 
 	//TraceStr("\r\n adc value start \r\n");
 	for (i = 0; i < TOTAL_ADC_NUM; i++) {
-		adc = 0;
-		for (j = 0; j < ADC_AGV_NUM; j++) {
-			adc += ADCConvertedValue[j * TOTAL_ADC_NUM + i];
+		for (totalAdc = 0,j = 0; j < ADC_AGV_NUM; j++) {
+			totalAdc += ADCConvertedValue[j * TOTAL_ADC_NUM + i];
 		}
-		adc = adc / ADC_AGV_NUM;
-		m = adc * 3.3 / 4096 * ratio[i] * 329 / 330;
-		//m1 = adc * 3.3 /4096 * 329 / 330;
-		//sprintf(strbuf,"adc value: %d voltage1 : %f ,voltage2: %f \r\n",adc,m1,m);
-		//TraceStr(strbuf);
+		adc = 1.0*totalAdc / ADC_AGV_NUM+0.5;
+		m1 = adc * 3.3 /4096 * 329 / 330;
+		m = m1* ratio[i];
 		MeasPara.Voltage[i] = m * 100;
-
+		//sprintf(strbuf,"adc value:%d,voltage1:%f ,voltage2:%f,ratio[%d]=%f, Voltage=%d\r\n",adc,m1,m,i,ratio[i],MeasPara.Voltage[i]);
+		//TraceStr(strbuf);
 	}
 	//TraceStr("\r\n adc value stop \r\n");
 }

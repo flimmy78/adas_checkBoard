@@ -335,7 +335,7 @@ bool FirmCmdDisableRP()
 	TraceStr("remove rp cmd complete\r\n");
 	return true;
 }
-#define bootloader_version		V_3_0
+//#define bootloader_version		V_3_0
 
 bool FirmTest(void)
 {

@@ -31,7 +31,8 @@ void TraceHex(char *buf, u16 len);
 			TraceStr_str(x);\
 		}while(0);
 #else
-	#define TraceStr(x) TraceStr_str(x)
+	//#define TraceStr(x) TraceStr_str(x)
+		#define TraceStr printf
 #endif
 
 

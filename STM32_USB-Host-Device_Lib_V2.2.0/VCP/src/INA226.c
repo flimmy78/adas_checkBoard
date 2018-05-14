@@ -254,13 +254,12 @@ void init_INA226_sleep(void)
 }
 
 
-
-extern char strbuf[64];
 extern u16 Current0;
 extern u16 Current1;
 void ReadINA226(void)
 {
 	u16 shunt, bus, cal;
+	char strbuf[64]={0};
 	//	u16 current;
 	u8 buf[2];
 	u32 tmp;

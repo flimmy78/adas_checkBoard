@@ -110,7 +110,7 @@
 
 
 
-#define 	TRACE_UART_BAUDRATE					460800//115200
+#define 	TRACE_UART_BAUDRATE      115200 //460800
 #define 	TRACE_UART_TX_DMA					DMA1_Channel4
 
 

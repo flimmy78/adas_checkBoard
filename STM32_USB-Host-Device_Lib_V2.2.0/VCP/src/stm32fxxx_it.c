@@ -300,21 +300,16 @@ void CAN1_RX0_IRQHandler(void)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
 unsigned char can_sensor_flag = 0 ; // 0 : NO , 1 : OK
 void CAN2_RX1_IRQHandler(void)
 {
 	CanRxMsg	  rxMsgCar;
-	static int send_can_flag = 0;
-
+	unsigned char tmpData=0xf0;
 	if (CAN_GetITStatus(CAN2, CAN_IT_BOF)) {
 		CAN_ClearITPendingBit(CAN2, CAN_IT_BOF);
 	}
 	if (CAN_GetITStatus(CAN2, CAN_IT_FF1)) {
-		CAN_ClearITPendingBit(CAN2, CAN_IT_FF1);    /**/
+		CAN_ClearITPendingBit(CAN2, CAN_IT_FF1);
 	}
 	if (CAN_GetITStatus(CAN2, CAN_IT_FOV1)) {
 		CAN_ClearITPendingBit(CAN2, CAN_IT_FOV1);
@@ -322,25 +317,18 @@ void CAN2_RX1_IRQHandler(void)
 	if (CAN_GetITStatus(CAN2, CAN_IT_EPV)) {
 		CAN_ClearITPendingBit(CAN2, CAN_IT_FOV1);
 	}
-
 	CAN_Receive(CAN2, CAN_FIFO1, &rxMsgCar);
 
-	if ((rxMsgCar.Data[0] == 0xf0) && (rxMsgCar.Data[1] == 0xf0)
-	    && (rxMsgCar.Data[2] == 0xf0) && (rxMsgCar.Data[3] == 0xf0)
-	    && (rxMsgCar.Data[4] == 0xf0) && (rxMsgCar.Data[5] == 0xf0)
-	    && (rxMsgCar.Data[6] == 0xf0) && (rxMsgCar.Data[7] == 0xf0)) {
+	if ((rxMsgCar.Data[0] == tmpData) && (rxMsgCar.Data[1] == tmpData)
+	    && (rxMsgCar.Data[2] == tmpData) && (rxMsgCar.Data[3] == tmpData)
+	    && (rxMsgCar.Data[4] == tmpData) && (rxMsgCar.Data[5] == tmpData)
+	    && (rxMsgCar.Data[6] == tmpData) && (rxMsgCar.Data[7] == tmpData)) {
+		//printf("CAN SENSOR flag=1 ,rxMsgCar.Data[7]=%x\n",rxMsgCar.Data[7]);
 		can_sensor_flag = 1;
 	} else {
+		printf("CAN SENSOR flag=0,rxMsgCar.Data[7]=%x\n",rxMsgCar.Data[7]);
 		can_sensor_flag = 0;
 	}
-	//if (rxMsgCar.StdId == 0x378)
-	//{
-	//send_can_flag = 1;
-	//}
-
-
-
-
 }
 
 
