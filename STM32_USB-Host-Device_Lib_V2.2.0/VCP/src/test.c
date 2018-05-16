@@ -181,8 +181,7 @@ static void TestFuncs(comm_head_t *msg_head)
 
 
 static unsigned int total_pack = 0;
-static unsigned char send_flag =
-    0; // 0  , send is over   ;   1  , send is not over
+static unsigned char send_flag =0; // 0, send is over;  1,send is not over
 
 static void TestServiceFile(comm_head_t *msg_head)
 {
@@ -414,8 +413,7 @@ static bool TestWriteFile(comm_head_t *msg_head)
 		strbuf[i] = 0;
 	}
 	TotalCount ++;
-
-
+	
 	//	sprintf(strbuf,"write memory start=0x%x,len = %d, Total: %d, first 4 bytes: 0x%02x,0x%02x,0x%02x,0x%02x\r\n",
 	//		tlv_firm->start,tlv_firm->len,TotalCount,ch[0],ch[1],ch[2],ch[3]);
 	//	TraceStr(strbuf);
@@ -1236,14 +1234,14 @@ static void TestReplyFunc(void)
 	tlv_reply->TestResult3 = 0;
 
 
-	tlv_reply->Volatage0 = MeasPara.Voltage[0];   // 3.3V
+	tlv_reply->Volatage0 = MeasPara.Voltage[0];   // 
 	tlv_reply->Volatage1 = MeasPara.Voltage[1];		//12V
 	tlv_reply->Volatage2 = MeasPara.Voltage[2];		//5V
 	tlv_reply->Volatage3 = MeasPara.Voltage[3];		//2.5V
 	tlv_reply->Volatage4 = MeasPara.Voltage[4];		//1.8V
 	tlv_reply->Volatage5 = MeasPara.Voltage[5];		//1.2V
-	tlv_reply->Volatage6 = MeasPara.Voltage[6];		//IN_POERR
-	tlv_reply->Volatage7 = MeasPara.Voltage[7];		//1.1V
+	tlv_reply->Volatage6 = MeasPara.Voltage[6];		//3.5v
+	tlv_reply->Volatage7 = MeasPara.Voltage[7];		//3.3V
 	tlv_reply->Volatage8 = MeasPara.Voltage[8];		//IN_POERR
 	curMode = GetTestStage();
 	switch (curMode) {
@@ -1261,6 +1259,7 @@ static void TestReplyFunc(void)
 		break;
 	}
 	temp_p = (unsigned char *)comm_head;
+	printf("comm_head->msg_len=%d\r\n",comm_head->msg_len);
 	for (i = 0; i < comm_head->msg_len; i++) {
 		PPP[2 * i + 1] = hex_table[temp_p[i] & 0x0f];
 		PPP[2 * i] = hex_table[(temp_p[i] >> 4) & 0x0f];
@@ -1268,7 +1267,15 @@ static void TestReplyFunc(void)
 	PPP[2 * (comm_head->msg_len) + 1] = NULL;
 	TraceStr("reply code:");
 	TraceStr(PPP);
-
+	
+	for(i=0;i<sizeof(MeasPara.Voltage)/sizeof(MeasPara.Voltage[0]);i++){
+		printf("i=%d,%dV:%d\r\n",i,MeasPara.hopeVolValue[i],MeasPara.Voltage[i]);
+	}
+		
+//	printf("%dV:%d,%dV:%d,%dV:%d, %dV:%d,%dV:%d,%dV:%d, %dV:%d,%dV:%d,%dV:%d\r\n",MeasPara.Voltage[0],
+//	MeasPara.Voltage[1],MeasPara.Voltage[2],MeasPara.Voltage[3],MeasPara.Voltage[4],MeasPara.Voltage[5],
+//	MeasPara.Voltage[6],MeasPara.Voltage[7],MeasPara.Voltage[8]);
+	
 	MsgSendFromTest(comm_head, TASK_USB);
 
 	//Free memory
@@ -3133,14 +3140,4 @@ void download_WIFI_Write_FS(u8 *msg_data)
 		//TraceStr("\r\nDownload WIFI : FS Programming failed\r\n");
 		//TestCmdReply(true,MSG_TYPE_CMD_TEST_WIFI_CODE_WRITE_FS_RESP,ACK_RUN_ERROR);
 	}
-}
-
-//WIFI TEST
-void WIFI_Test()
-{
-	//UART init , UART4  --  AP WIFI   ,
-
-	//send CMD to AP WIFI
-
-	//sedn CMD TO client WIFI
 }

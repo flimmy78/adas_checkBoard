@@ -1,4 +1,10 @@
 
+#ifndef __MSG_H__
+#define __MSG_H__
+
+
+#include "../inc/common.h"
+
 typedef enum TASK_ID {
 
 	TASK_USB = 0x01,
@@ -14,11 +20,7 @@ typedef enum {
 } msg_type_enum;
 
 
-
-
-
 // MSG header for msgs
-
 typedef struct MSG_QUEUE {
 	u32 msg_addr;
 } msg_queue_t;
@@ -34,27 +36,14 @@ typedef struct MSG_HEADER {
 
 
 
-
-
-
-
-
-
-
-
-
-
 #define 	UART_START_BYTES						0xCCCCCCCC
 #define		CRC32_FIXED_BYTES						0xBBBBBBBB
-
-
 
 #define		MAX_FILENAME_LEN						64
 
 /**************************************************************************************/
 /**************************************************************************************/
 /**************************************************************************************/
-
 
 /* TLV type */
 
@@ -70,8 +59,6 @@ typedef struct MSG_HEADER {
 #define		TP_TIME_ID				0x06
 
 #define		TP_LCD_SIZE_ID			0x1A
-
-
 
 #define 	TP_CMD_DELAY_ID			0x09
 #define 	TP_CMD_WORK_TIME_ID		0x0A
@@ -110,8 +97,6 @@ typedef struct MSG_HEADER {
 #define 	MSG_PARA_READ_REQ			0x01
 #define 	MSG_PARA_SET_REQ			0x02
 #define 	MSG_PARA_GET_TIME_REQ		0x03
-
-
 
 #define 	MSG_PARA_READ_RESP			0x01
 #define 	MSG_PARA_SET_RESP			0x02
@@ -188,18 +173,10 @@ typedef enum {
 
 
 
-
-
-
-
-
-
 typedef struct {
 	u16   type;
 	u16   length;
 } TLV_HEADER_t;
-
-
 
 
 typedef struct {
@@ -236,7 +213,6 @@ typedef struct {
 } TLV_FIRM_FILE_t;
 
 
-
 typedef enum {
 	NONE_TEST,
 	TEST_DOWNLOAD,
@@ -256,18 +232,7 @@ typedef enum {
 
 
 
-
-
-
-
-
-
-
-
-
-
 // UART
-
 #define 	UART_HEAD_LENGTH			sizeof(comm_head_t)
 
 #define 	MSG_CRC_OFFSET				8
@@ -286,20 +251,25 @@ typedef enum {
 
 
 // ADC and measure
-
-
 #define 	ADC1_DR_Address    ((u32)0x4001244C)
 #define 	ADC_AGV_NUM			16//16
-#define		TOTAL_ADC_NUM		9
+#define	  USED_ADC_TOTAL_NUM  9
 
+#define COEDDICIEN_OF_12V_AD    (((100+47.5)+20)/20.0)   //PC1     // Vin/((100+47.5)+20)=Vadc/(20)
+#define COEDDICIEN_OF_5V_AD     (((100+47.5)+20)/20.0)  //PC2
+#define COEDDICIEN_OF_3_3V_AD   (((1+0)+10)/10.0)    //NRST-->PC0
+#define COEDDICIEN_OF_2_5V_AD   (((1+0)+20)/20.0)     //PC3
+#define COEDDICIEN_OF_1_8V_AD   (((1+0)+20)/20.0)     //PA1
+#define COEDDICIEN_OF_1_2V_AD   (((1+0)+20)/20.0)     //PC4
 
-#define 	RANK1_RATIO			(11/10)		//PC0
-#define 	RANK2_RATIO			(167.5/20)
-#define 	RANK3_RATIO			(167.5/20)
-#define 	RANK4_RATIO			(21/20)
-#define 	RANK5_RATIO			(21/20)
-#define 	RANK6_RATIO			(41/20)
+#define COEDDICIEN_OF_REMAIN1_AD  COEDDICIEN_OF_3_3V_AD    //PC5
+#define COEDDICIEN_OF_REMAIN2_AD  COEDDICIEN_OF_3_3V_AD    //PB0
+#define COEDDICIEN_OF_REMAIN3_AD  COEDDICIEN_OF_3_3V_AD    //PB1
 
+typedef struct {
+	float volCoefficient;
+	float volValue;
+} adc_param_info;
 
 typedef struct {
 	//INA226
@@ -308,8 +278,8 @@ typedef struct {
 	u32 BusVoltage;				//0.1V
 	u32 Power;					// ?
 	//ADC
-	u32 Voltage[TOTAL_ADC_NUM];	// 0.01V
-
+	u32 Voltage[USED_ADC_TOTAL_NUM];	// 0.01V
+	u8 hopeVolValue[USED_ADC_TOTAL_NUM];
 } Measurement_Para_t;
 
-
+#endif //__MSG_H__

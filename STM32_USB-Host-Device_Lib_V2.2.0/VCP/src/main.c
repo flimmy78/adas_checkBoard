@@ -127,6 +127,11 @@ static void InitVar(void)
 
 extern void RCC_GetClocksFreq(RCC_ClocksTypeDef *RCC_Clocks);
 
+
+
+void ReadADC(void);
+
+
 int main(void)
 {
 	//  u32 i = 0;
@@ -135,14 +140,11 @@ int main(void)
 	InitVar();
 	Driver_Init();
 	//Full Speed
-	USBD_Init(&USB_OTG_dev,
-	          USB_OTG_FS_CORE_ID,
-	          &USR_desc,
-	          &USBD_CDC_cb,
-	          &USR_cb);
+	USBD_Init(&USB_OTG_dev,USB_OTG_FS_CORE_ID, &USR_desc,&USBD_CDC_cb,&USR_cb);
 	SystemCoreClockUpdate();
 
-	TraceStr("system startup...\r\n");
+	printf("  system build time: %s,%s\r\n",__DATE__,__TIME__);
+#if 1
 
 	xTaskCreate(test_task, 	"test task",	configMINIMAL_STACK_SIZE, NULL,
 	            TEST_TASK_PRIO, NULL);
@@ -151,10 +153,13 @@ int main(void)
 	xTaskCreate(can_task, 	"can task",	configMINIMAL_STACK_SIZE, NULL,
 	            USB_TASK_PRIO, NULL);
 	vTaskStartScheduler();
-
+#else  //for debug adc
+	InitADC();
 	while (1) {
-		;	//Never run  here
+		ReadADC();
+		drv_delayms(1000);
 	}
+#endif
 }
 
 void vApplicationMallocFailedHook(void)

@@ -275,9 +275,6 @@ void CAN2_Config(can_para_t *can_para)
 
 
 
-
-
-
 void can_send(void)
 {
 	CanTxMsg TxMessage;
@@ -335,10 +332,5 @@ void can_task(void *taskparam)
 		} else {
 			vTaskDelay(100);
 		}
-
-
 	}
-
-
-
 }
